@@ -21,8 +21,12 @@ foreach ($key in $keys) {
     # Flatten the data set and add the key as a column
     $flattenedData = @()
     foreach ($item in $data) {
-        $item | Add-Member -NotePropertyName "key" -NotePropertyValue $key
-        $flattenedData += ($item | Select-Object -ExpandProperty * | Select-Object -Property *)
+        $flattenedItem = [PSCustomObject]@{}
+        $flattenedItem | Add-Member -NotePropertyName "key" -NotePropertyValue $key
+        foreach ($property in $item.PSObject.Properties) {
+            $flattenedItem | Add-Member -NotePropertyName $property.Name -NotePropertyValue $property.Value
+        }
+        $flattenedData += $flattenedItem
     }
 
     # Insert the flattened data into the SQL server table
