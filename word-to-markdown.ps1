@@ -10,18 +10,22 @@ $html = $doc.Content.EnhancedMarkup
 $html = $html.Replace("<head>", "").Replace("</head>", "").Replace("<body>", "").Replace("</body>", "")
 
 # Convert the HTML to Markdown
-$markdown = ConvertFrom-Html -Html $html | Out-String
+$markdown = ""
+$regex = [regex]::new("<p.*?>(.*?)<\/p>")
+$matches = $regex.Matches($html)
+foreach ($match in $matches) {
+    $paragraph = $match.Groups[1].Value
+    $paragraph = $paragraph -replace "<(\/)*strong>", "**" # Replace <strong> tags with Markdown bold
+    $paragraph = $paragraph -replace "<(\/)*em>", "*" # Replace <em> tags with Markdown italic
+    $paragraph = $paragraph -replace "<(\/)*u>", "<u>" # Replace <u> tags with Markdown underline
+    $paragraph = $paragraph -replace "<(\/)*strike>", "<del>" # Replace <strike> tags with Markdown strikethrough
+    $paragraph = $paragraph -replace "<(\/)*a>", "" # Remove <a> tags
+    $paragraph = $paragraph -replace "`r`n", "`n" # Remove any Windows line breaks
+    $markdown += $paragraph + "`n`n"
+}
 
 # Clean up the Markdown formatting
-$markdown = $markdown -replace "`r`n", "`n" # Remove any Windows line breaks
 $markdown = $markdown -replace "^(\s*)<li>", "`$1* " # Replace <li> tags with Markdown bullet points
-$markdown = $markdown -replace "<(\/)*p>", "" # Remove <p> tags
-$markdown = $markdown -replace "<(\/)*h[1-6]>", "" # Remove <h1> to <h6> tags
-$markdown = $markdown -replace "<(\/)*strong>", "**" # Replace <strong> tags with Markdown bold
-$markdown = $markdown -replace "<(\/)*em>", "*" # Replace <em> tags with Markdown italic
-$markdown = $markdown -replace "<(\/)*u>", "<u>" # Replace <u> tags with Markdown underline
-$markdown = $markdown -replace "<(\/)*strike>", "<del>" # Replace <strike> tags with Markdown strikethrough
-$markdown = $markdown -replace "<(\/)*a>", "" # Remove <a> tags
 $markdown = $markdown -replace "<(\/)*table.*?>", "|_. " # Replace <table> tags with Markdown tables
 $markdown = $markdown -replace "<(\/)*tr.*?>", "|" # Replace <tr> tags with Markdown table rows
 $markdown = $markdown -replace "<(\/)*td.*?>", "|" # Replace <td> tags with Markdown table cells
