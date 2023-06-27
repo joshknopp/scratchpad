@@ -1,72 +1,39 @@
-interface ComparisonResult {
-  added: any[];
-  removed: any[];
-  modified: any[];
+interface ComparisonResult<T> {
+  added: T[];
+  removed: T[];
+  modified: T[];
 }
 
-function compareArrays(original: any[], updated: any[]): ComparisonResult {
-  if (original.length === 0 && updated.length === 0) {
-    return { added: [], removed: [], modified: [] };
-  }
+function compareArrays<T>(original: T[], updated: T[], primaryKey: string): ComparisonResult<T> {
+  const originalKeys = new Set(original.map((item) => item[primaryKey]));
+  const updatedKeys = new Set(updated.map((item) => item[primaryKey]));
 
-  const originalKeys = Object.keys(original[0]);
-  const updatedKeys = Object.keys(updated[0]);
+  const added: T[] = [];
+  const removed: T[] = [];
+  const modified: T[] = [];
 
-  if (!areArraysEqual(originalKeys, updatedKeys)) {
-    throw new Error('Arrays contain objects with different properties');
-  }
+  updated.forEach((item) => {
+    const key = item[primaryKey];
 
-  const added = [];
-  const removed = [];
-  const modified = [];
-
-  original.forEach((originalElement) => {
-    const matchingElement = updated.find((updatedElement) =>
-      compareObjects(originalElement, updatedElement, originalKeys)
-    );
-
-    if (!matchingElement) {
-      removed.push(originalElement);
-    } else if (!areObjectsEqual(originalElement, matchingElement)) {
-      modified.push({ original: originalElement, updated: matchingElement });
+    if (!originalKeys.has(key)) {
+      added.push(item);
+    } else {
+      const originalItem = original.find((originalItem) => originalItem[primaryKey] === key);
+      if (!areObjectsEqual(originalItem, item)) {
+        modified.push(item);
+      }
     }
   });
 
-  updated.forEach((updatedElement) => {
-    const matchingElement = original.find((originalElement) =>
-      compareObjects(originalElement, updatedElement, originalKeys)
-    );
+  original.forEach((item) => {
+    const key = item[primaryKey];
 
-    if (!matchingElement) {
-      added.push(updatedElement);
+    if (!updatedKeys.has(key)) {
+      removed.push(item);
     }
   });
 
   return { added, removed, modified };
-}
-
-function areArraysEqual(arr1: any[], arr2: any[]): boolean {
-  if (arr1.length !== arr2.length) {
-    return false;
-  }
-
-  for (let i = 0; i < arr1.length; i++) {
-    if (!arr2.includes(arr1[i])) {
-      return false;
-    }
-  }
-
-  return true;
-}
-
-function compareObjects(obj1: any, obj2: any, keys: string[]): boolean {
-  for (const key of keys) {
-    if (obj1[key] !== obj2[key]) {
-      return false;
-    }
-  }
-
-  return true;
 }
 
 function areObjectsEqual(obj1: any, obj2: any): boolean {
