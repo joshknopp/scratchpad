@@ -1,5 +1,6 @@
 CREATE TABLE [dbo].[tbl_Teams] ( [Team_ID] NUMERIC NOT NULL IDENTITY(1,1) , [Team_Abbrev] VARCHAR(3) COLLATE SQL_Latin1_General_CP1_CI_AS NULL , [Team_City] VARCHAR(50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL , [Team_Name] VARCHAR(50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL , [Team_Conference] VARCHAR(3) COLLATE SQL_Latin1_General_CP1_CI_AS NULL , [Team_Division] VARCHAR(5) COLLATE SQL_Latin1_General_CP1_CI_AS NULL , CONSTRAINT [PK__tbl_Team__02215C0A182C9B23] PRIMARY KEY ([Team_ID] ASC) )
-
+CREATE TABLE [dbo].[tbl_Games] ( [Game_ID] NUMERIC NOT NULL IDENTITY(1,1) , [Game_Week] NUMERIC NULL , [Game_Date_Time] DATETIME NULL , [Game_Home_Team] NUMERIC NULL , [Game_Away_Team] NUMERIC NULL , [Game_Line_Win] NUMERIC NULL , [Game_Result_Win] NUMERIC NULL , [Game_Season] CHAR(4) COLLATE SQL_Latin1_General_CP1_CI_AS NULL , CONSTRAINT [PK__tbl_Game__093B1F8E08EA5793] PRIMARY KEY ([Game_ID] ASC) )
+      
 
 
 
