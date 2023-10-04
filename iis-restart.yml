@@ -1,0 +1,28 @@
+---
+- name: Restart IIS on Windows Server
+  hosts: windows_server  # Replace with the hostname or IP address of your Windows server
+  gather_facts: no  # We don't need to gather facts for this example
+
+  tasks:
+    - name: Ensure IIS is in the running state
+      win_service:
+        name: W3SVC
+        state: started
+      register: iis_service_result
+
+    - name: Restart IIS if it was started
+      win_shell: iisreset
+      when: iis_service_result.changed
+
+    - name: Wait for IIS to fully restart (optional)
+      win_shell: Start-Sleep -s 10
+      when: iis_service_result.changed
+
+    - name: Check the status of IIS
+      win_service:
+        name: W3SVC
+      register: iis_status
+
+    - name: Display the IIS status
+      debug:
+        var: iis_status
