@@ -10,16 +10,25 @@
 
 ```mermaid
 %% https://portal.311.nyc.gov/article/?kanumber=KA-01012
-graph TD
+sequenceDiagram
+    create participant Customer
+    create participant VitalChek.com
     %% https://www.vitalchek.com/birth-certificates/new-york/new-york-city-dept-of-health-and-mental-hygiene
-    A(Order long-form cert) -->|VitalChek.com| B(Select Apostille as reason)
-    B -->|Submit request| C{Wait for cert by mail}
+    Customer->>VitalChek.com: Order long-form cert
+    VitalChek.com->>VitalChek.com: Processing
+    destroy VitalChek.com
+    VitalChek.com->>Customer: Receive long-form and exemplification
+    create participant County Clerk
     %% https://portal.311.nyc.gov/article/?kanumber=KA-01029
-    C --> D(Mail to county clerk)
-    D -->|Request signature verification| E{Wait for cert by mail}
+    Customer->>County Clerk: Request signature verification
+    County Clerk->>County Clerk: Processing
+    destroy County Clerk
+    County Clerk->>Customer: Receive signature verification
+    create participant NY Dept of State
     %% https://dos.ny.gov/apostille-or-certificate-authentication
-    E --> F(Send to NY Dept of State)
-    F -->|Request Apostille| G{Wait for cert by mail}
-    G --> H[Celebrate]
+    Customer->>NY Dept of State: Request Apostille
+    NY Dept of State->>NY Dept of State: Processing
+    destroy NY Dept of State
+    NY Dept of State->>Customer: Receive Apostille
 ```
 
