@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <style>
+      body {
+          font-family: Arial, sans-serif;
+      }
+      
+      #quiz-container {
+          width: 50%;
+          margin: 0 auto;
+      }
+      
+      .question {
+          margin-bottom: 20px;
+      }
+      
+      label {
+          display: block;
+          margin-bottom: 5px;
+      }
+      
+      #user-info {
+          margin-top: 20px;
+      }
+      
+      button {
+          display: block;
+          margin: 20px 0;
+      }
+
+    </style>
+</head>
+<body>
+    <div id="quiz-container">
+        <form id="quiz-form">
+            <div class="question">
+                <h2>Question 1</h2>
+                <label><input type="radio" name="question1" value="A"> Answer A</label>
+                <label><input type="radio" name="question1" value="B"> Answer B</label>
+                <label><input type="radio" name="question1" value="C"> Answer C</label>
+                <label><input type="radio" name="question1" value="D"> Answer D</label>
+                <label><input type="radio" name="question1" value="E"> Answer E</label>
+                <label><input type="radio" name="question1" value="F"> Answer F</label>
+                <label><input type="radio" name="question1" value="G"> Answer G</label>
+            </div>
+            <!-- Repeat similar blocks for more questions -->
+            <div class="question">
+                <h2>Question 2</h2>
+                <label><input type="radio" name="question2" value="A"> Answer A</label>
+                <label><input type="radio" name="question2" value="B"> Answer B</label>
+                <label><input type="radio" name="question2" value="C"> Answer C</label>
+                <label><input type="radio" name="question2" value="D"> Answer D</label>
+                <label><input type="radio" name="question2" value="E"> Answer E</label>
+                <label><input type="radio" name="question2" value="F"> Answer F</label>
+                <label><input type="radio" name="question2" value="G"> Answer G</label>
+            </div>
+            <!-- Add more questions as needed -->
+            <div id="user-info">
+                <label>Name: <input type="text" id="name" required></label>
+                <label>Email: <input type="email" id="email" required></label>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="result-container"></div>
+    </div>
+    <script>
+      document.getElementById('quiz-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+    
+        let answers = {};
+        let formElements = this.elements;
+    
+        for (let i = 0; i < formElements.length; i++) {
+            if (formElements[i].type === 'radio' && formElements[i].checked) {
+                let name = formElements[i].name;
+                let value = formElements[i].value;
+                if (!answers[name]) {
+                    answers[name] = {};
+                }
+                if (!answers[name][value]) {
+                    answers[name][value] = 0;
+                }
+                answers[name][value]++;
+            }
+        }
+    
+        // Determine mostly picked answer
+        let answerCount = {};
+        for (let key in answers) {
+            for (let answer in answers[key]) {
+                if (!answerCount[answer]) {
+                    answerCount[answer] = 0;
+                }
+                answerCount[answer] += answers[key][answer];
+            }
+        }
+    
+        let maxCount = 0;
+        let result = '';
+        for (let answer in answerCount) {
+            if (answerCount[answer] > maxCount) {
+                maxCount = answerCount[answer];
+                result = answer;
+            }
+        }
+    
+        let name = document.getElementById('name').value;
+        let email = document.getElementById('email').value;
+    
+        // Display result
+        document.getElementById('result-container').innerHTML = `Mostly ${result}`;
+    
+        // Prepare data for Google Forms
+        let formData = new FormData();
+        formData.append('entry.YOUR_ENTRY_ID_NAME', name); // Replace YOUR_ENTRY_ID_NAME with your Google Form entry ID for name
+        formData.append('entry.YOUR_ENTRY_ID_EMAIL', email); // Replace YOUR_ENTRY_ID_EMAIL with your Google Form entry ID for email
+        formData.append('entry.YOUR_ENTRY_ID_RESULT', result); // Replace YOUR_ENTRY_ID_RESULT with your Google Form entry ID for result
+    
+        // Submit data to Google Forms
+        fetch('https://docs.google.com/forms/d/e/YOUR_GOOGLE_FORM_ID/formResponse', { // Replace YOUR_GOOGLE_FORM_ID with your form ID
+            method: 'POST',
+            body: formData,
+            mode: 'no-cors'
+        }).then(response => {
+            console.log('Form submitted successfully');
+        }).catch(error => {
+            console.error('Error submitting form:', error);
+        });
+    });
+
+    </script>
+</body>
+</html>
