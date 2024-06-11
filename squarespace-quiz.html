@@ -32,6 +32,9 @@
           margin: 20px 0;
       }
 
+      #quiz-result-a, #quiz-result-b, #quiz-result-c, #quiz-result-d, #quiz-result-e, #quiz-result-f, #quiz-result-g {
+          display: none; /* Initially hide all result divs */
+      }
     </style>
 </head>
 <body>
@@ -65,7 +68,13 @@
             </div>
             <button type="submit">Submit</button>
         </form>
-        <div id="result-container"></div>
+        <div id="quiz-result-a" style="display: none;">Result for Mostly A</div>
+        <div id="quiz-result-b" style="display: none;">Result for Mostly B</div>
+        <div id="quiz-result-c" style="display: none;">Result for Mostly C</div>
+        <div id="quiz-result-d" style="display: none;">Result for Mostly D</div>
+        <div id="quiz-result-e" style="display: none;">Result for Mostly E</div>
+        <div id="quiz-result-f" style="display: none;">Result for Mostly F</div>
+        <div id="quiz-result-g" style="display: none;">Result for Mostly G</div>
     </div>
     <script>
       document.getElementById('quiz-form').addEventListener('submit', function(event) {
@@ -74,6 +83,7 @@
         let answers = {};
         let formElements = this.elements;
     
+        // Collect answers
         for (let i = 0; i < formElements.length; i++) {
             if (formElements[i].type === 'radio' && formElements[i].checked) {
                 let name = formElements[i].name;
@@ -88,7 +98,7 @@
             }
         }
     
-        // Determine mostly picked answer
+        // Determine mostly picked answers
         let answerCount = {};
         for (let key in answers) {
             for (let answer in answers[key]) {
@@ -100,25 +110,37 @@
         }
     
         let maxCount = 0;
-        let result = '';
+        let results = [];
         for (let answer in answerCount) {
             if (answerCount[answer] > maxCount) {
                 maxCount = answerCount[answer];
-                result = answer;
+                results = [answer];
+            } else if (answerCount[answer] === maxCount) {
+                results.push(answer);
             }
         }
     
         let name = document.getElementById('name').value;
         let email = document.getElementById('email').value;
     
-        // Display result
-        document.getElementById('result-container').innerHTML = `Mostly ${result}`;
+        // Hide all result divs
+        document.querySelectorAll('[id^="quiz-result-"]').forEach(function(div) {
+            div.style.display = 'none';
+        });
+    
+        // Show relevant result divs
+        results.forEach(function(result) {
+            let resultDiv = document.getElementById('quiz-result-' + result.toLowerCase());
+            if (resultDiv) {
+                resultDiv.style.display = 'block';
+            }
+        });
     
         // Prepare data for Google Forms
         let formData = new FormData();
         formData.append('entry.YOUR_ENTRY_ID_NAME', name); // Replace YOUR_ENTRY_ID_NAME with your Google Form entry ID for name
         formData.append('entry.YOUR_ENTRY_ID_EMAIL', email); // Replace YOUR_ENTRY_ID_EMAIL with your Google Form entry ID for email
-        formData.append('entry.YOUR_ENTRY_ID_RESULT', result); // Replace YOUR_ENTRY_ID_RESULT with your Google Form entry ID for result
+        formData.append('entry.YOUR_ENTRY_ID_RESULT', results.join(', ')); // Replace YOUR_ENTRY_ID_RESULT with your Google Form entry ID for result
     
         // Submit data to Google Forms
         fetch('https://docs.google.com/forms/d/e/YOUR_GOOGLE_FORM_ID/formResponse', { // Replace YOUR_GOOGLE_FORM_ID with your form ID
@@ -130,8 +152,7 @@
         }).catch(error => {
             console.error('Error submitting form:', error);
         });
-    });
-
+      });
     </script>
 </body>
 </html>
