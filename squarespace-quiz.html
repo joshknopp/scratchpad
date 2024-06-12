@@ -32,8 +32,18 @@
           margin: 20px 0;
       }
 
+      .quiz-result {
+        margin-bottom: 0.5em;
+      }
+
       #quiz-result-a, #quiz-result-b, #quiz-result-c, #quiz-result-d, #quiz-result-e, #quiz-result-f, #quiz-result-g {
           display: none; /* Initially hide all result divs */
+      }
+
+      .question-text {
+        font-weight: bold;
+        font-size: 1.1em;
+        margin-bottom: 0.5em;
       }
     </style>
 </head>
@@ -41,61 +51,217 @@
     <div id="quiz-container">
         <form id="quiz-form">
             <div class="question">
-                <h2>Question 1</h2>
-                <label><input type="radio" name="question1" value="A"> Answer A</label>
-                <label><input type="radio" name="question1" value="B"> Answer B</label>
-                <label><input type="radio" name="question1" value="C"> Answer C</label>
-                <label><input type="radio" name="question1" value="D"> Answer D</label>
-                <label><input type="radio" name="question1" value="E"> Answer E</label>
-                <label><input type="radio" name="question1" value="F"> Answer F</label>
-                <label><input type="radio" name="question1" value="G"> Answer G</label>
+                <div class="question-text">1. What kinds of movies do you like the most?</div>
+                <label><input type="radio" name="entry.1383463625" value="A. Heartwarming family dramas with strong emotional bonds" required> A. Heartwarming family dramas with strong emotional bonds</label>
+                <label><input type="radio" name="entry.1383463625" value="B. Coming-of-age stories with youthful adventures"> B. Coming-of-age stories with youthful adventures</label>
+                <label><input type="radio" name="entry.1383463625" value="C. Action-packed adventures with strong female leads"> C. Action-packed adventures with strong female leads</label>
+                <label><input type="radio" name="entry.1383463625" value="D. Mystical and fantasy films with deep spiritual themes"> D. Mystical and fantasy films with deep spiritual themes</label>
+                <label><input type="radio" name="entry.1383463625" value="E. Thought-provoking documentaries and historical dramas"> E. Thought-provoking documentaries and historical dramas</label>
+                <label><input type="radio" name="entry.1383463625" value="F. Epic tales of power, leadership, and grandeur"> F. Epic tales of power, leadership, and grandeur</label>
+                <label><input type="radio" name="entry.1383463625" value="G. Romantic and seductive dramas with a touch of mystery"> G. Romantic and seductive dramas with a touch of mystery</label>
             </div>
-            <!-- Repeat similar blocks for more questions -->
+    
             <div class="question">
-                <h2>Question 2</h2>
-                <label><input type="radio" name="question2" value="A"> Answer A</label>
-                <label><input type="radio" name="question2" value="B"> Answer B</label>
-                <label><input type="radio" name="question2" value="C"> Answer C</label>
-                <label><input type="radio" name="question2" value="D"> Answer D</label>
-                <label><input type="radio" name="question2" value="E"> Answer E</label>
-                <label><input type="radio" name="question2" value="F"> Answer F</label>
-                <label><input type="radio" name="question2" value="G"> Answer G</label>
+                <div class="question-text">2. How do you typically interact in social settings?</div>
+                <label><input type="radio" name="entry.259852274" value="A. I make sure everyone is comfortable and taken care of" required> A. I make sure everyone is comfortable and taken care of</label>
+                <label><input type="radio" name="entry.259852274" value="B. I enjoy meeting new people and having fun"> B. I enjoy meeting new people and having fun</label>
+                <label><input type="radio" name="entry.259852274" value="C. I like to take charge and organize activities"> C. I like to take charge and organize activities</label>
+                <label><input type="radio" name="entry.259852274" value="D. I prefer intimate gatherings where deep conversations happen"> D. I prefer intimate gatherings where deep conversations happen</label>
+                <label><input type="radio" name="entry.259852274" value="E. I often share knowledge and advice with others"> E. I often share knowledge and advice with others</label>
+                <label><input type="radio" name="entry.259852274" value="F. I naturally take on a leadership role and command attention"> F. I naturally take on a leadership role and command attention</label>
+                <label><input type="radio" name="entry.259852274" value="G. I enjoy charming and captivating those around me"> G. I enjoy charming and captivating those around me</label>
             </div>
-            <!-- Add more questions as needed -->
+    
+            <div class="question">
+                <div class="question-text">3. What are you typically like in a professional setting?</div>
+                <label><input type="radio" name="entry.546658251" value="A. I’m supportive and always willing to help my colleagues" required> A. I’m supportive and always willing to help my colleagues</label>
+                <label><input type="radio" name="entry.546658251" value="B. I’m enthusiastic and eager to learn new things"> B. I’m enthusiastic and eager to learn new things</label>
+                <label><input type="radio" name="entry.546658251" value="C. I’m focused and goal-oriented, always pushing towards my targets"> C. I’m focused and goal-oriented, always pushing towards my targets</label>
+                <label><input type="radio" name="entry.546658251" value="D. I bring creativity and out-of-the-box thinking to my work"> D. I bring creativity and out-of-the-box thinking to my work</label>
+                <label><input type="radio" name="entry.546658251" value="E. I’m analytical and strategic, always thinking ahead"> E. I’m analytical and strategic, always thinking ahead</label>
+                <label><input type="radio" name="entry.546658251" value="F. I lead with confidence and make decisive choices"> F. I lead with confidence and make decisive choices</label>
+                <label><input type="radio" name="entry.546658251" value="G. I use my charisma and networking skills to get ahead"> G. I use my charisma and networking skills to get ahead</label>
+            </div>
+    
+            <div class="question">
+                <div class="question-text">4. What kinds of animals do you relate to the most?</div>
+                <label><input type="radio" name="entry.1048791656" value="A. Dogs or elephants, known for their loyalty and nurturing nature" required> A. Dogs or elephants, known for their loyalty and nurturing nature</label>
+                <label><input type="radio" name="entry.1048791656" value="B. Deer or butterflies, symbolizing innocence and transformation"> B. Deer or butterflies, symbolizing innocence and transformation</label>
+                <label><input type="radio" name="entry.1048791656" value="C. Lions or eagles, representing strength and independence"> C. Lions or eagles, representing strength and independence</label>
+                <label><input type="radio" name="entry.1048791656" value="D. Owls or cats, associated with mystery and intuition"> D. Owls or cats, associated with mystery and intuition</label>
+                <label><input type="radio" name="entry.1048791656" value="E. Tortoises or ravens, embodying wisdom and longevity"> E. Tortoises or ravens, embodying wisdom and longevity</label>
+                <label><input type="radio" name="entry.1048791656" value="F. Lions or peacocks, signifying royalty and dignity"> F. Lions or peacocks, signifying royalty and dignity</label>
+                <label><input type="radio" name="entry.1048791656" value="G. Foxes or swans, representing charm and allure"> G. Foxes or swans, representing charm and allure</label>
+            </div>
+    
+            <div class="question">
+                <div class="question-text">5. How do you usually like to recharge your energy?</div>
+                <label><input type="radio" name="entry.311721074" value="A. Spending quality time with loved ones" required> A. Spending quality time with loved ones</label>
+                <label><input type="radio" name="entry.311721074" value="B. Engaging in fun and playful activities"> B. Engaging in fun and playful activities</label>
+                <label><input type="radio" name="entry.311721074" value="C. Taking on new challenges or going on adventures"> C. Taking on new challenges or going on adventures</label>
+                <label><input type="radio" name="entry.311721074" value="D. Meditating or spending time in nature"> D. Meditating or spending time in nature</label>
+                <label><input type="radio" name="entry.311721074" value="E. Reading or learning something new"> E. Reading or learning something new</label>
+                <label><input type="radio" name="entry.311721074" value="F. Enjoying some pampering and luxury"> F. Enjoying some pampering and luxury</label>
+                <label><input type="radio" name="entry.311721074" value="G. Indulging in self-care rituals or creative hobbies"> G. Indulging in self-care rituals or creative hobbies</label>
+            </div>
+    
+            <div class="question">
+                <div class="question-text">6. Which qualities do you value the most in yourself?</div>
+                <label><input type="radio" name="entry.1601146823" value="A. My compassion and ability to care for others" required> A. My compassion and ability to care for others</label>
+                <label><input type="radio" name="entry.1601146823" value="B. My curiosity and zest for life"> B. My curiosity and zest for life</label>
+                <label><input type="radio" name="entry.1601146823" value="C. My determination and strength"> C. My determination and strength</label>
+                <label><input type="radio" name="entry.1601146823" value="D. My intuition and spiritual insight"> D. My intuition and spiritual insight</label>
+                <label><input type="radio" name="entry.1601146823" value="E. My wisdom and knowledge"> E. My wisdom and knowledge</label>
+                <label><input type="radio" name="entry.1601146823" value="F. My leadership and confidence"> F. My leadership and confidence</label>
+                <label><input type="radio" name="entry.1601146823" value="G. My charm and ability to attract what I desire"> G. My charm and ability to attract what I desire</label>
+            </div>
+    
+            <div class="question">
+                <div class="question-text">7. What is your brand/business best at?</div>
+                <label><input type="radio" name="entry.2020522854" value="A. Providing a nurturing and supportive experience" required> A. Providing a nurturing and supportive experience</label>
+                <label><input type="radio" name="entry.2020522854" value="B. Bringing freshness, creativity, and new perspectives"> B. Bringing freshness, creativity, and new perspectives</label>
+                <label><input type="radio" name="entry.2020522854" value="C. Offering solutions with a dynamic and proactive approach"> C. Offering solutions with a dynamic and proactive approach</label>
+                <label><input type="radio" name="entry.2020522854" value="D. Guiding clients through spiritual and transformative journeys"> D. Guiding clients through spiritual and transformative journeys</label>
+                <label><input type="radio" name="entry.2020522854" value="E. Delivering insightful and strategic advice"> E. Delivering insightful and strategic advice</label>
+                <label><input type="radio" name="entry.2020522854" value="F. Leading with authority and delivering high-end services"> F. Leading with authority and delivering high-end services</label>
+                <label><input type="radio" name="entry.2020522854" value="G. Creating an enchanting and captivating brand experience"> G. Creating an enchanting and captivating brand experience</label>
+            </div>
+    
+            <div class="question">
+                <div class="question-text">8. What makes your brand special in terms of client/customer experience?</div>
+                <label><input type="radio" name="entry.1930080857" value="A. The warmth and personal care clients receive" required> A. The warmth and personal care clients receive</label>
+                <label><input type="radio" name="entry.1930080857" value="B. The sense of excitement and innovation clients feel"> B. The sense of excitement and innovation clients feel</label>
+                <label><input type="radio" name="entry.1930080857" value="C. The clear direction and motivation clients gain"> C. The clear direction and motivation clients gain</label>
+                <label><input type="radio" name="entry.1930080857" value="D. The deep, transformative impact on clients’ lives"> D. The deep, transformative impact on clients’ lives</label>
+                <label><input type="radio" name="entry.1930080857" value="E. The wealth of knowledge and wisdom clients access"> E. The wealth of knowledge and wisdom clients access</label>
+                <label><input type="radio" name="entry.1930080857" value="F. The sense of prestige and excellence clients associate with"> F. The sense of prestige and excellence clients associate with</label>
+                <label><input type="radio" name="entry.1930080857" value="G. The enchanting and memorable experiences clients enjoy"> G. The enchanting and memorable experiences clients enjoy</label>
+            </div>
+    
+            <div class="question">
+                <div class="question-text">9. How do you help your clients achieve their goals/dreams?</div>
+                <label><input type="radio" name="entry.1878156496" value="A. By offering unwavering support and care" required> A. By offering unwavering support and care</label>
+                <label><input type="radio" name="entry.1878156496" value="B. By igniting their passion and creativity"> B. By igniting their passion and creativity</label>
+                <label><input type="radio" name="entry.1878156496" value="C. By setting clear targets and providing motivation"> C. By setting clear targets and providing motivation</label>
+                <label><input type="radio" name="entry.1878156496" value="D. By guiding them through spiritual and reflective practices"> D. By guiding them through spiritual and reflective practices</label>
+                <label><input type="radio" name="entry.1878156496" value="E. By delivering strategic advice and knowledge"> E. By delivering strategic advice and knowledge</label>
+                <label><input type="radio" name="entry.1878156496" value="F. By empowering them with confidence and leadership"> F. By empowering them with confidence and leadership</label>
+                <label><input type="radio" name="entry.1878156496" value="G. By captivating them and making the experience enjoyable"> G. By captivating them and making the experience enjoyable</label>
+            </div>
+    
+            <div class="question">
+                <div class="question-text">10. How does your brand build lasting relationships with clients/customers?</div>
+                <label><input type="radio" name="entry.907654832" value="A. By providing continuous support and care" required> A. By providing continuous support and care</label>
+                <label><input type="radio" name="entry.907654832" value="B. By keeping things fun and engaging"> B. By keeping things fun and engaging</label>
+                <label><input type="radio" name="entry.907654832" value="C. By consistently helping clients achieve their goals"> C. By consistently helping clients achieve their goals</label>
+                <label><input type="radio" name="entry.907654832" value="D. By fostering deep and meaningful connections"> D. By fostering deep and meaningful connections</label>
+                <label><input type="radio" name="entry.907654832" value="E. By offering valuable and ongoing insights"> E. By offering valuable and ongoing insights</label>
+                <label><input type="radio" name="entry.907654832" value="F. By maintaining high standards and reliability"> F. By maintaining high standards and reliability</label>
+                <label><input type="radio" name="entry.907654832" value="G. By creating magical and memorable moments"> G. By creating magical and memorable moments</label>
+            </div>
+    
+            <div class="question">
+                <div class="question-text">11. How does your brand empower people?</div>
+                <label><input type="radio" name="entry.1220459212" value="A. By providing a strong support system" required> A. By providing a strong support system</label>
+                <label><input type="radio" name="entry.1220459212" value="B. By encouraging creativity and exploration"> B. By encouraging creativity and exploration</label>
+                <label><input type="radio" name="entry.1220459212" value="C. By pushing them to achieve their goals"> C. By pushing them to achieve their goals</label>
+                <label><input type="radio" name="entry.1220459212" value="D. By guiding them to inner peace and understanding"> D. By guiding them to inner peace and understanding</label>
+                <label><input type="radio" name="entry.1220459212" value="E. By equipping them with knowledge and insights"> E. By equipping them with knowledge and insights</label>
+                <label><input type="radio" name="entry.1220459212" value="F. By instilling confidence and authority"> F. By instilling confidence and authority</label>
+                <label><input type="radio" name="entry.1220459212" value="G. By inspiring them through beauty and charm"> G. By inspiring them through beauty and charm</label>
+            </div>
+    
+            <div class="question">
+                <div class="question-text">12. How do you want your brand to make clients/customers feel?</div>
+                <label><input type="radio" name="entry.1560047723" value="A. Loved and cared for" required> A. Loved and cared for</label>
+                <label><input type="radio" name="entry.1560047723" value="B. Excited and inspired"> B. Excited and inspired</label>
+                <label><input type="radio" name="entry.1560047723" value="C. Empowered and focused"> C. Empowered and focused</label>
+                <label><input type="radio" name="entry.1560047723" value="D. Calm and enlightened"> D. Calm and enlightened</label>
+                <label><input type="radio" name="entry.1560047723" value="E. Informed and confident"> E. Informed and confident</label>
+                <label><input type="radio" name="entry.1560047723" value="F. Respected and esteemed"> F. Respected and esteemed</label>
+                <label><input type="radio" name="entry.1560047723" value="G. Enchanted and delighted"> G. Enchanted and delighted</label>
+            </div>
+
+            <br /><hr /><br />
+
+            <div class="question-text">To reveal your Goddess Aura Type results, pop your info in the boxes below and hit Submit!</div>
+            
             <div id="user-info">
                 <label>Name: <input type="text" id="name" required></label>
                 <label>Email: <input type="email" id="email" required></label>
             </div>
             <button type="submit">Submit</button>
         </form>
-        <div id="quiz-result-a" style="display: none;">Result for Mostly A</div>
-        <div id="quiz-result-b" style="display: none;">Result for Mostly B</div>
-        <div id="quiz-result-c" style="display: none;">Result for Mostly C</div>
-        <div id="quiz-result-d" style="display: none;">Result for Mostly D</div>
-        <div id="quiz-result-e" style="display: none;">Result for Mostly E</div>
-        <div id="quiz-result-f" style="display: none;">Result for Mostly F</div>
-        <div id="quiz-result-g" style="display: none;">Result for Mostly G</div>
+        <div id="quiz-result-a" class="quiz-result" style="display: none;">
+            <strong>★ THE NURTURER</strong> (Aura Color: Soft Pink) — indicates empathy, nurturing, and compassion<br />
+            <a href="https://www.lauraknopp.com/the-nurturer-goddess-aura-type-guide" target="_blank">Learn More!</a>
+        </div>
+        <div id="quiz-result-b" class="quiz-result" style="display: none;">
+            <strong>★ THE MAIDEN</strong> ( Aura Color: Light Blue) — represents youthfulness, innocence, and creativity<br />
+            <a href="https://www.lauraknopp.com/the-maiden-goddess-aura-type-guide" target="_blank">Learn More!</a>
+        </div>
+        <div id="quiz-result-c" class="quiz-result" style="display: none;">
+            <strong>★ THE HUNTRESS</strong> (Aura Color: Fiery Orange) — signifies energy, determination, and courage<br />
+            <a href="https://www.lauraknopp.com/the-huntress-goddess-aura-type-guide" target="_blank">Learn More!</a>
+        </div>
+        <div id="quiz-result-d" class="quiz-result" style="display: none;">
+            <strong>★ THE MYSTIC</strong> (Aura Color: Deep Indigo) — represents spirituality, intuition, and deep understanding<br />
+            <a href="https://www.lauraknopp.com/the-mystic-goddess-aura-type-guide" target="_blank">Learn More!</a>
+        </div>
+        <div id="quiz-result-e" class="quiz-result" style="display: none;">
+            <strong>★ THE SAGE</strong> (Aura Color: Golden Yellow) — signifies wisdom, knowledge, and enlightenment<br />
+            <a href="https://www.lauraknopp.com/the-sage-goddess-aura-type-guide" target="_blank">Learn More!</a>
+        </div>
+        <div id="quiz-result-f" class="quiz-result" style="display: none;">
+            <strong>★ THE QUEEN</strong> (Aura Color: Royal Purple) — authority, leadership, and sovereignty<br />
+            <a href="https://www.lauraknopp.com/the-queen-goddess-aura-type-guide" target="_blank">Learn More!</a>
+        </div>
+        <div id="quiz-result-g" class="quiz-result" style="display: none;">
+            <strong>★ THE ENCHANTRESS</strong> (Aura Color: Emerald Green) — indicates emotional depth, empathy, and understanding<br />
+            <a href="https://www.lauraknopp.com/the-enchantress-goddess-aura-type-guide" target="_blank">Learn More!</a>
+        </div>
+
+        <div id="quiz-follow-up" class="quiz-follow-up" style="display: none;">
+            <br /><hr /><br />
+            <p>Now that you’ve completed your quiz, please schedule your complimentary 30-min virtual session with Laura using the link below to uncover your Goddess Aura Type:</p> 
+            <p><a href="https://calendly.com/knopp-laura/30min" target="_blank">https://calendly.com/knopp-laura/30min</a></p>
+            <p>This personalized session will help you understand important aspects about your Goddess Aura Type like your strengths and weaknesses, as well as what makes you magnetic and who your ideal clients are.</p>
+            <p>In addition to receiving personalized insights, you will be guided through a short meditation during the session to help you tap into the energy and essence of your Goddess Aura Type.</p>
+        </div>
+
+        
     </div>
     <script>
       document.getElementById('quiz-form').addEventListener('submit', function(event) {
         event.preventDefault();
     
         let answers = {};
+        let postAnswers = {};
         let formElements = this.elements;
+        let userName, userEmail;
     
         // Collect answers
         for (let i = 0; i < formElements.length; i++) {
             if (formElements[i].type === 'radio' && formElements[i].checked) {
                 let name = formElements[i].name;
-                let value = formElements[i].value;
-                if (!answers[name]) {
-                    answers[name] = {};
+                let rawValue = formElements[i].value;
+                if(rawValue && rawValue.charAt(0)) {
+                    postAnswers[formElements[i].name] = rawValue;
+                    let value = rawValue.charAt(0).toLowerCase();
+                    if (!answers[name]) {
+                        answers[name] = {};
+                    }
+                    if (!answers[name][value]) {
+                        answers[name][value] = 0;
+                    }
+                    answers[name][value]++;
                 }
-                if (!answers[name][value]) {
-                    answers[name][value] = 0;
-                }
-                answers[name][value]++;
+            } else if(formElements[i].id === 'name') {
+                userName = formElements[i].value;
+            } else if(formElements[i].id === 'email') {
+                userEmail = formElements[i].value;
             }
+
         }
     
         // Determine mostly picked answers
@@ -127,6 +293,7 @@
         document.querySelectorAll('[id^="quiz-result-"]').forEach(function(div) {
             div.style.display = 'none';
         });
+        
     
         // Show relevant result divs
         results.forEach(function(result) {
@@ -135,20 +302,37 @@
                 resultDiv.style.display = 'block';
             }
         });
+
+        document.querySelectorAll('[id^="quiz-follow-up"]').forEach(function(div) {
+            div.style.display = 'block';
+        });
+
+        let formId = `1FAIpQLSfAjcHY2uAhYquKx_pIvAqrIVSaFQCkr1qnfgYE36HJ0irZPA`;
     
         // Prepare data for Google Forms
         let formData = new FormData();
-        formData.append('entry.YOUR_ENTRY_ID_NAME', name); // Replace YOUR_ENTRY_ID_NAME with your Google Form entry ID for name
-        formData.append('entry.YOUR_ENTRY_ID_EMAIL', email); // Replace YOUR_ENTRY_ID_EMAIL with your Google Form entry ID for email
-        formData.append('entry.YOUR_ENTRY_ID_RESULT', results.join(', ')); // Replace YOUR_ENTRY_ID_RESULT with your Google Form entry ID for result
-    
+
+        for(postAnswer in postAnswers) {
+            formData.append(postAnswer, postAnswers[postAnswer]);
+        }
+        
+        formData.append('entry.862423678', userName);
+        formData.append('emailAddress', userEmail);
+        formData.append('emailRecipt', true);
+        /*
+        formData.append('fvv', 1);
+        formData.append('partialResponse', [null,null,"-4132949391276558087"]);
+        formData.append('pageHistory', 0);
+        formData.append('fbzx', -4132949391276558087);
+        formData.append('submissionTimestamp', (new Date()).getTime());
+        */
         // Submit data to Google Forms
-        fetch('https://docs.google.com/forms/d/e/YOUR_GOOGLE_FORM_ID/formResponse', { // Replace YOUR_GOOGLE_FORM_ID with your form ID
+        fetch(`https://docs.google.com/forms/d/e/${formId}/formResponse`, {
             method: 'POST',
             body: formData,
             mode: 'no-cors'
         }).then(response => {
-            console.log('Form submitted successfully');
+            console.log('Form submitted successfully', response);
         }).catch(error => {
             console.error('Error submitting form:', error);
         });
