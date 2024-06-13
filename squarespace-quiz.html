@@ -14,8 +14,18 @@
       }
       
       .question {
-          margin-bottom: 20px;
-      }
+            padding: 2.5em 0; /* 5em total spacing: 2.5em top + 2.5em bottom */
+            border-top: 1px solid #ccc; /* Thin horizontal line */
+        }
+        
+        .question:first-of-type {
+            padding-top: 0; /* Remove top padding for the first question */
+            border-top: none; /* Remove top border for the first question */
+        }
+
+        .question:last-of-type {
+            padding-bottom: 0; /* Remove bottom padding for the last question */
+        }
       
       label {
           display: block;
@@ -41,8 +51,12 @@
 
       .question-text {
         font-weight: bold;
-        font-size: 1.1em;
         margin-bottom: 0.5em;
+        text-transform: uppercase;
+      }
+
+      #user-info td {
+        padding-bottom: 1.1em;
       }
     </style>
 </head>
@@ -183,21 +197,30 @@
 
             <br /><hr /><br />
 
-            <div class="question-text">To reveal your Goddess Aura Type results, pop your info in the boxes below and hit Submit!</div>
+            <div style="font-weight: bold">Congratulations, you finished the quiz! Ready to unveil your Goddess Aura Type? Simply pop your name & email down there, then click that pretty little button & your result will magically appear below ✨️</div>
             
             <div id="user-info">
-                <label>Name: <input type="text" id="name" required></label>
-                <label>Email: <input type="email" id="email" required></label>
+                <table>
+                  <tr>
+                    <td>Name:</td>
+                    <td><input type="text" id="name" required></td>
+                  </tr>
+                  <tr>
+                    <td>Email:</td>
+                    <td><input type="email" id="email" required></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td><input type="image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFQAAAAuCAIAAAA5sKkxAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEUSURBVGhD7ZW7CoQwEEX3/0u/wu+wtLGzs9FGLAQbERGyJGbzlC18gOHecArjJCFnMsZPmeWwUB4VyqNCeVQojwrlUaE8KpRHhfKo3CA/jMJv0+ANqKZFB4RYp8INSdpu1UEhtq4y76NlzVy5oDvyNDfJj43XXfpWd5vZVSr6LTa0g1Waft1gWZWjPa0vli/ryRx+GPKj3rNGJmuu5XM014RefvK6a00c/uh5L9ORd5spY1nk8Udutn7sIMtbrRDIp1H2dpfX5b2WwoXn1Oe9ZW9IQ/5I4PyFZ0ii7CVSxm70wq/uCR648MLvXCnpFl8Be7J0C/Py/pNPF8qjQnlUKI8K5VGhPCqUR4XyqFAeFcpjkuVfJIYM5RMEr4UAAAAASUVORK5CYII=" /></td>
+                  </tr>
+                </table>
             </div>
+            
 
-            <button type="submit" class="ff-5ea7a0a2b9c153002b5ab7ce__button fd-btn" data-ff-el="submit" data-ff-tab="submit" id="yui_3_17_2_1_1718212464648_660">
-                <span>BOOP!</span>
-            </button>
 
         </form>
-
         <div id="quiz-follow-up" class="quiz-follow-up" style="display: none;">
-            <strong>You are...</strong>
+            <strong>The results are in! You are...</strong>
         </div>
 
         <div id="quiz-result-a" class="quiz-result" style="display: none;">
@@ -206,28 +229,31 @@
         </div>
         <div id="quiz-result-b" class="quiz-result" style="display: none;">
             <strong>THE MAIDEN</strong><br />Aura Color: Light Blue<br />Represents youthfulness, innocence, and creativity<br />
-            <a href="https://www.lauraknopp.com/the-maiden-goddess-aura-type-guide" target="_blank">Learn More!</a>
+            <a href="https://www.lauraknopp.com/the-maiden-goddess-aura-type-guide" target="_blank">Click here to learn more!</a>
         </div>
         <div id="quiz-result-c" class="quiz-result" style="display: none;">
             <strong>THE HUNTRESS</strong><br />Aura Color: Fiery Orange<br />Signifies energy, determination, and courage<br />
-            <a href="https://www.lauraknopp.com/the-huntress-goddess-aura-type-guide" target="_blank">Learn More!</a>
+            <a href="https://www.lauraknopp.com/the-huntress-goddess-aura-type-guide" target="_blank">Click here to learn more!</a>
         </div>
         <div id="quiz-result-d" class="quiz-result" style="display: none;">
             <strong>THE MYSTIC</strong><br />Aura Color: Deep Indigo<br />Represents spirituality, intuition, and deep understanding<br />
-            <a href="https://www.lauraknopp.com/the-mystic-goddess-aura-type-guide" target="_blank">Learn More!</a>
+            <a href="https://www.lauraknopp.com/the-mystic-goddess-aura-type-guide" target="_blank">Click here to learn more!</a>
         </div>
         <div id="quiz-result-e" class="quiz-result" style="display: none;">
             <strong>THE SAGE</strong><br />Aura Color: Golden Yellow<br />Signifies wisdom, knowledge, and enlightenment<br />
-            <a href="https://www.lauraknopp.com/the-sage-goddess-aura-type-guide" target="_blank">Learn More!</a>
+            <a href="https://www.lauraknopp.com/the-sage-goddess-aura-type-guide" target="_blank">Click here to learn more!</a>
         </div>
         <div id="quiz-result-f" class="quiz-result" style="display: none;">
             <strong>THE QUEEN</strong><br />Aura Color: Royal Purple<br />Authority, leadership, and sovereignty<br />
-            <a href="https://www.lauraknopp.com/the-queen-goddess-aura-type-guide" target="_blank">Learn More!</a>
+            <a href="https://www.lauraknopp.com/the-queen-goddess-aura-type-guide" target="_blank">Click here to learn more!</a>
         </div>
         <div id="quiz-result-g" class="quiz-result" style="display: none;">
             <strong>THE ENCHANTRESS</strong><br />Aura Color: Emerald Green<br />Indicates emotional depth, empathy, and understanding<br />
-            <a href="https://www.lauraknopp.com/the-enchantress-goddess-aura-type-guide" target="_blank">Learn More!</a>
+            <a href="https://www.lauraknopp.com/the-enchantress-goddess-aura-type-guide" target="_blank">Click here to learn more!</a>
         </div>
+
+
+        
     </div>
     <script>
       document.getElementById('quiz-form').addEventListener('submit', function(event) {
@@ -292,12 +318,14 @@
             div.style.display = 'none';
         });
         
+        let resultsSummary = '';
     
         // Show relevant result divs
         results.forEach(function(result) {
             let resultDiv = document.getElementById('quiz-result-' + result.toLowerCase());
             if (resultDiv) {
                 resultDiv.style.display = 'block';
+                resultsSummary += resultDiv.innerHTML;
             }
         });
 
@@ -316,7 +344,8 @@
         
         formData.append('entry.862423678', userName);
         formData.append('emailAddress', userEmail);
-        formData.append('emailRecipt', true);
+        //formData.append('entry.738796507', resultsSummary);
+        //formData.append('emailReceipt', true);
         /*
         formData.append('fvv', 1);
         formData.append('partialResponse', [null,null,"-4132949391276558087"]);
