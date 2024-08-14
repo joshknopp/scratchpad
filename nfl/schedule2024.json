@@ -1,0 +1,1885 @@
+[
+    {
+        "week": 1,
+        "datetime": "Sept. 5 8 p.m. ET",
+        "team1": "Baltimore Ravens",
+        "team2": "Kansas City Chiefs",
+        "network": "NBC/Peacock"
+    },
+    {
+        "week": 1,
+        "datetime": "Sept. 6 8:15 p.m. ET",
+        "team1": "Green Bay Packers",
+        "team2": "Philadelphia Eagles",
+        "network": "Peacock"
+    },
+    {
+        "week": 1,
+        "datetime": "Sept. 8 1 p.m. ET",
+        "team1": "Pittsburgh Steelers",
+        "team2": "Atlanta Falcons",
+        "network": "Fox"
+    },
+    {
+        "week": 1,
+        "datetime": "Sept. 8 1 p.m. ET",
+        "team1": "Arizona Cardinals",
+        "team2": "Buffalo Bills",
+        "network": "CBS"
+    },
+    {
+        "week": 1,
+        "datetime": "Sept. 8 1 p.m. ET",
+        "team1": "Tennessee Titans",
+        "team2": "Chicago Bears",
+        "network": "Fox"
+    },
+    {
+        "week": 1,
+        "datetime": "Sept. 8 1 p.m. ET",
+        "team1": "New England Patriots",
+        "team2": "Cincinnati Bengals",
+        "network": "CBS"
+    },
+    {
+        "week": 1,
+        "datetime": "Sept. 8 1 p.m. ET",
+        "team1": "Houston Texans",
+        "team2": "Indianapolis Colts",
+        "network": "CBS"
+    },
+    {
+        "week": 1,
+        "datetime": "Sept. 8 1 p.m. ET",
+        "team1": "Jacksonville Jaguars",
+        "team2": "Miami Dolphins",
+        "network": "CBS"
+    },
+    {
+        "week": 1,
+        "datetime": "Sept. 8 1 p.m. ET",
+        "team1": "Carolina Panthers",
+        "team2": "New Orleans Saints",
+        "network": "Fox"
+    },
+    {
+        "week": 1,
+        "datetime": "Sept. 8 1 p.m. ET",
+        "team1": "Minnesota Vikings",
+        "team2": "New York Giants",
+        "network": "Fox"
+    },
+    {
+        "week": 1,
+        "datetime": "Sept. 8 4:05 p.m. ET",
+        "team1": "Las Vegas Raiders",
+        "team2": "Los Angeles Chargers",
+        "network": "CBS"
+    },
+    {
+        "week": 1,
+        "datetime": "Sept. 8 4:05 p.m. ET",
+        "team1": "Denver Broncos",
+        "team2": "Seattle Seahawks",
+        "network": "CBS"
+    },
+    {
+        "week": 1,
+        "datetime": "Sept. 8 4:25 p.m. ET",
+        "team1": "Washington Commanders",
+        "team2": "Tampa Bay Buccaneers",
+        "network": "Fox"
+    },
+    {
+        "week": 1,
+        "datetime": "Sept. 8 4:25 p.m. ET",
+        "team1": "Dallas Cowboys",
+        "team2": "Cleveland Browns",
+        "network": "Fox"
+    },
+    {
+        "week": 1,
+        "datetime": "Sept. 8 8:20 p.m. ET",
+        "team1": "Los Angeles Rams",
+        "team2": "Detroit Lions",
+        "network": "NBC/Peacock"
+    },
+    {
+        "week": 1,
+        "datetime": "Sept. 9 8:25 p.m. ET",
+        "team1": "New York Jets",
+        "team2": "San Francisco 49ers",
+        "network": "ESPN"
+    },
+    {
+        "week": 2,
+        "datetime": "Sept. 12 8 p.m. ET",
+        "team1": "Miami Dolphins",
+        "team2": "Buffalo Bills",
+        "network": "Amazon Prime"
+    },
+    {
+        "week": 2,
+        "datetime": "Sept. 15 1 p.m. ET",
+        "team1": "Las Vegas Raiders",
+        "team2": "Baltimore Ravens",
+        "network": "CBS"
+    },
+    {
+        "week": 2,
+        "datetime": "Sept. 15 1 p.m. ET",
+        "team1": "Los Angeles Chargers",
+        "team2": "Carolina Panthers",
+        "network": "CBS"
+    },
+    {
+        "week": 2,
+        "datetime": "Sept. 15 1 p.m. ET",
+        "team1": "New Orleans Saints",
+        "team2": "Dallas Cowboys",
+        "network": "Fox"
+    },
+    {
+        "week": 2,
+        "datetime": "Sept. 15 1 p.m. ET",
+        "team1": "Tampa Bay Buccaneers",
+        "team2": "Detroit Lions",
+        "network": "Fox"
+    },
+    {
+        "week": 2,
+        "datetime": "Sept. 15 1 p.m. ET",
+        "team1": "Indianapolis Colts",
+        "team2": "Green Bay Packers",
+        "network": "Fox"
+    },
+    {
+        "week": 2,
+        "datetime": "Sept. 15 1 p.m. ET",
+        "team1": "Cleveland Browns",
+        "team2": "Jacksonville Jaguars",
+        "network": "CBS"
+    },
+    {
+        "week": 2,
+        "datetime": "Sept. 15 1 p.m. ET",
+        "team1": "San Francisco 49ers",
+        "team2": "Minnesota Vikings",
+        "network": "CBS"
+    },
+    {
+        "week": 2,
+        "datetime": "Sept. 15 1 p.m. ET",
+        "team1": "Seattle Seahawks",
+        "team2": "New England Patriots",
+        "network": "Fox"
+    },
+    {
+        "week": 2,
+        "datetime": "Sept. 15 1 p.m. ET",
+        "team1": "New York Jets",
+        "team2": "Tennessee Titans",
+        "network": "CBS"
+    },
+    {
+        "week": 2,
+        "datetime": "Sept. 15 1 p.m. ET",
+        "team1": "New York Giants",
+        "team2": "Washington Commanders",
+        "network": "Fox"
+    },
+    {
+        "week": 2,
+        "datetime": "Sept. 15 4:05 p.m. ET",
+        "team1": "Los Angeles Rams",
+        "team2": "Arizona Cardinals",
+        "network": "Fox"
+    },
+    {
+        "week": 2,
+        "datetime": "Sept. 15 4:25 p.m. ET",
+        "team1": "Cincinnati Bengals",
+        "team2": "Kansas City Chiefs",
+        "network": "CBS"
+    },
+    {
+        "week": 2,
+        "datetime": "Sept. 15 4:25 p.m. ET",
+        "team1": "Pittsburgh Steelers",
+        "team2": "Denver Broncos",
+        "network": "CBS"
+    },
+    {
+        "week": 2,
+        "datetime": "Sept. 15 8:20 p.m. ET",
+        "team1": "Chicago Bears",
+        "team2": "Houston Texans",
+        "network": "NBC/Peacock"
+    },
+    {
+        "week": 2,
+        "datetime": "Sept. 16 8:15 p.m. ET",
+        "team1": "Atlanta Falcons",
+        "team2": "Philadelphia Eagles",
+        "network": "ESPN/ABC"
+    },
+    {
+        "week": 3,
+        "datetime": "Sept. 19 8:15 p.m. ET",
+        "team1": "New England Patriots",
+        "team2": "New York Jets",
+        "network": "Amazon"
+    },
+    {
+        "week": 3,
+        "datetime": "Sept. 22 1 p.m. ET",
+        "team1": "New York Giants",
+        "team2": "Cleveland Browns",
+        "network": "Fox"
+    },
+    {
+        "week": 3,
+        "datetime": "Sept. 22 1 p.m. ET",
+        "team1": "Chicago Bears",
+        "team2": "Indianapolis Colts",
+        "network": "CBS"
+    },
+    {
+        "week": 3,
+        "datetime": "Sept. 22 1 p.m. ET",
+        "team1": "Houston Texans",
+        "team2": "Minnesota Vikings",
+        "network": "CBS"
+    },
+    {
+        "week": 3,
+        "datetime": "Sept. 22 1 p.m. ET",
+        "team1": "Philadelphia Eagles",
+        "team2": "New Orleans Saints",
+        "network": "Fox"
+    },
+    {
+        "week": 3,
+        "datetime": "Sept. 22 1 p.m. ET",
+        "team1": "Los Angeles Chargers",
+        "team2": "Pittsburgh Steelers",
+        "network": "CBS"
+    },
+    {
+        "week": 3,
+        "datetime": "Sept. 22 1 p.m. ET",
+        "team1": "Denver Broncos",
+        "team2": "Tampa Bay Buccaneers",
+        "network": "Fox"
+    },
+    {
+        "week": 3,
+        "datetime": "Sept. 22 X p.m. ET",
+        "team1": "Green Bay Packers",
+        "team2": "Tennessee Titans",
+        "network": "Fox"
+    },
+    {
+        "week": 3,
+        "datetime": "Sept. 22 4:05 p.m. ET",
+        "team1": "Carolina Panthers",
+        "team2": "Las Vegas Raiders",
+        "network": "CBS"
+    },
+    {
+        "week": 3,
+        "datetime": "Sept. 22 4:05 p.m. ET",
+        "team1": "Miami Dolphins",
+        "team2": "Seattle Seahawks",
+        "network": "CBS"
+    },
+    {
+        "week": 3,
+        "datetime": "Sept. 22 4:25 p.m. ET",
+        "team1": "Detroit Lions",
+        "team2": "Arizona Cardinals",
+        "network": "Fox"
+    },
+    {
+        "week": 3,
+        "datetime": "Sept. 22 4:25 p.m. ET",
+        "team1": "Baltimore Ravens",
+        "team2": "Dallas Cowboys",
+        "network": "Fox"
+    },
+    {
+        "week": 3,
+        "datetime": "Sept. 22 4:25 p.m. ET",
+        "team1": "San Francisco 49ers",
+        "team2": "Los Angeles Rams",
+        "network": "Fox"
+    },
+    {
+        "week": 3,
+        "datetime": "Sept. 22 8:20 p.m. ET",
+        "team1": "Kansas City Chiefs",
+        "team2": "Atlanta Falcons",
+        "network": "NBC/Peacock"
+    },
+    {
+        "week": 3,
+        "datetime": "Sept. 23 7:30 p.m. ET",
+        "team1": "Jacksonville Jaguars",
+        "team2": "Buffalo Bills",
+        "network": "ESPN"
+    },
+    {
+        "week": 3,
+        "datetime": "Sept. 23 8:15 p.m. ET",
+        "team1": "Washington Commanders",
+        "team2": "Cincinnati Bengals",
+        "network": "ABC"
+    },
+    {
+        "week": 4,
+        "datetime": "Sept. 26 8:15 p.m. ET",
+        "team1": "Dallas Cowboys",
+        "team2": "New York Giants",
+        "network": "Amazon"
+    },
+    {
+        "week": 4,
+        "datetime": "Sept. 29 1 p.m. ET",
+        "team1": "New Orleans Saints",
+        "team2": "Atlanta Falcons",
+        "network": "Fox"
+    },
+    {
+        "week": 4,
+        "datetime": "Sept. 29 1 p.m. ET",
+        "team1": "Cincinnati Bengals",
+        "team2": "Carolina Panthers",
+        "network": "Fox"
+    },
+    {
+        "week": 4,
+        "datetime": "Sept. 29 1 p.m. ET",
+        "team1": "Los Angeles Rams",
+        "team2": "Chicago Bears",
+        "network": "Fox"
+    },
+    {
+        "week": 4,
+        "datetime": "Sept. 29 1 p.m. ET",
+        "team1": "Minnesota Vikings",
+        "team2": "Green Bay Packers",
+        "network": "CBS"
+    },
+    {
+        "week": 4,
+        "datetime": "Sept. 29 1 p.m. ET",
+        "team1": "Jacksonville Jaguars",
+        "team2": "Houston Texans",
+        "network": "CBS"
+    },
+    {
+        "week": 4,
+        "datetime": "Sept. 29 1 p.m. ET",
+        "team1": "Pittsburgh Steelers",
+        "team2": "Indianapolis Colts",
+        "network": "CBS"
+    },
+    {
+        "week": 4,
+        "datetime": "Sept. 29 1 p.m. ET",
+        "team1": "Denver Broncos",
+        "team2": "New York Jets",
+        "network": "CBS"
+    },
+    {
+        "week": 4,
+        "datetime": "Sept. 29 1 p.m. ET",
+        "team1": "Philadelphia Eagles",
+        "team2": "Tampa Bay Buccaneers",
+        "network": "Fox"
+    },
+    {
+        "week": 4,
+        "datetime": "Sept. 29 4:05 p.m. ET",
+        "team1": "Washington Commanders",
+        "team2": "Arizona Cardinals",
+        "network": "Fox"
+    },
+    {
+        "week": 4,
+        "datetime": "Sept. 29 4:05 p.m. ET",
+        "team1": "New England Patriots",
+        "team2": "San Francisco 49ers",
+        "network": "Fox"
+    },
+    {
+        "week": 4,
+        "datetime": "Sept. 29 4:25 p.m. ET",
+        "team1": "Kansas City Chiefs",
+        "team2": "Los Angeles Chargers",
+        "network": "CBS"
+    },
+    {
+        "week": 4,
+        "datetime": "Sept. 29 4:25 p.m. ET",
+        "team1": "Cleveland Browns",
+        "team2": "Las Vegas Raiders",
+        "network": "CBS"
+    },
+    {
+        "week": 4,
+        "datetime": "Sept. 29 8:20 p.m. ET",
+        "team1": "Buffalo Bills",
+        "team2": "Baltimore Ravens",
+        "network": "NBC/Peacock"
+    },
+    {
+        "week": 4,
+        "datetime": "Sept. 30 7:30 p.m. ET",
+        "team1": "Tennessee Titans",
+        "team2": "Miami Dolphins",
+        "network": "ESPN"
+    },
+    {
+        "week": 4,
+        "datetime": "Sept. 30 8:15 p.m. ET",
+        "team1": "Seattle Seahawks",
+        "team2": "Detroit Lions",
+        "network": "ABC"
+    },
+    {
+        "week": 5,
+        "datetime": "Oct. 3 8:15 p.m. ET",
+        "team1": "Tampa Bay Buccaneers",
+        "team2": "Atlanta Falcons",
+        "network": "Amazon"
+    },
+    {
+        "week": 5,
+        "datetime": "Oct. 6 9:30 a.m. ET",
+        "team1": "New York Jets",
+        "team2": "Minnesota Vikings",
+        "network": "NFL Network"
+    },
+    {
+        "week": 5,
+        "datetime": "Oct. 6 1 p.m. ET",
+        "team1": "Carolina Panthers",
+        "team2": "Chicago Bears",
+        "network": "Fox"
+    },
+    {
+        "week": 5,
+        "datetime": "Oct. 6 1 p.m. ET",
+        "team1": "Baltimore Ravens",
+        "team2": "Cincinnati Bengals",
+        "network": "CBS"
+    },
+    {
+        "week": 5,
+        "datetime": "Oct. 6 1 p.m. ET",
+        "team1": "Buffalo Bills",
+        "team2": "Houston Texans",
+        "network": "CBS"
+    },
+    {
+        "week": 5,
+        "datetime": "Oct. 6 1 p.m. ET",
+        "team1": "Indianapolis Colts",
+        "team2": "Jacksonville Jaguars",
+        "network": "CBS"
+    },
+    {
+        "week": 5,
+        "datetime": "Oct. 6 1 p.m. ET",
+        "team1": "Miami Dolphins",
+        "team2": "New England Patriots",
+        "network": "Fox"
+    },
+    {
+        "week": 5,
+        "datetime": "Oct. 6 1 p.m. ET",
+        "team1": "Cleveland Browns",
+        "team2": "Washington Commanders",
+        "network": "Fox"
+    },
+    {
+        "week": 5,
+        "datetime": "Oct. 6 4:05 p.m. ET",
+        "team1": "Las Vegas Raiders",
+        "team2": "Denver Broncos",
+        "network": "Fox"
+    },
+    {
+        "week": 5,
+        "datetime": "Oct. 6 4:05 p.m. ET",
+        "team1": "Arizona Cardinals",
+        "team2": "San Francisco 49ers",
+        "network": "Fox"
+    },
+    {
+        "week": 5,
+        "datetime": "Oct. 6 4:25 p.m. ET",
+        "team1": "Green Bay Packers",
+        "team2": "Los Angeles Rams",
+        "network": "CBS"
+    },
+    {
+        "week": 5,
+        "datetime": "Oct. 6 4:25 p.m. ET",
+        "team1": "New York Giants",
+        "team2": "Seattle Seahawks",
+        "network": "CBS"
+    },
+    {
+        "week": 5,
+        "datetime": "Oct. 6 8:20 p.m. ET",
+        "team1": "Dallas Cowboys",
+        "team2": "Pittsburgh Steelers",
+        "network": "NBC/Peacock"
+    },
+    {
+        "week": 5,
+        "datetime": "Oct. 7 8:15 p.m. ET",
+        "team1": "New Orleans Saints",
+        "team2": "Kansas City Chiefs",
+        "network": "ESPN/ABC"
+    },
+    {
+        "week": 6,
+        "datetime": "Oct. 10 8:15 p.m. ET",
+        "team1": "San Francisco 49ers",
+        "team2": "Seattle Seahawks",
+        "network": "Amazon"
+    },
+    {
+        "week": 6,
+        "datetime": "Oct. 13 9:30 a.m. ET",
+        "team1": "Jacksonville Jaguars",
+        "team2": "Chicago Bears",
+        "network": "NFL Network"
+    },
+    {
+        "week": 6,
+        "datetime": "Oct. 13 1 p.m. ET",
+        "team1": "Washington Commanders",
+        "team2": "Baltimore Ravens",
+        "network": "CBS"
+    },
+    {
+        "week": 6,
+        "datetime": "Oct. 13 1 p.m. ET",
+        "team1": "Arizona Cardinals",
+        "team2": "Green Bay Packers",
+        "network": "Fox"
+    },
+    {
+        "week": 6,
+        "datetime": "Oct. 13 1 p.m. ET",
+        "team1": "Houston Texans",
+        "team2": "New England Patriots",
+        "network": "CBS"
+    },
+    {
+        "week": 6,
+        "datetime": "Oct. 13 1 p.m. ET",
+        "team1": "Tampa Bay Buccaneers",
+        "team2": "New Orleans Saints",
+        "network": "Fox"
+    },
+    {
+        "week": 6,
+        "datetime": "Oct. 13 1 p.m. ET",
+        "team1": "Cleveland Browns",
+        "team2": "Philadelphia Eagles",
+        "network": "Fox"
+    },
+    {
+        "week": 6,
+        "datetime": "Oct. 13 1 p.m. ET",
+        "team1": "Indianapolis Colts",
+        "team2": "Tennessee Titans",
+        "network": "CBS"
+    },
+    {
+        "week": 6,
+        "datetime": "Oct. 13 4:05 p.m. ET",
+        "team1": "Los Angeles Chargers",
+        "team2": "Denver Broncos",
+        "network": "CBS"
+    },
+    {
+        "week": 6,
+        "datetime": "Oct. 13 4:05 p.m. ET",
+        "team1": "Pittsburgh Steelers",
+        "team2": "Las Vegas Raiders",
+        "network": "CBS"
+    },
+    {
+        "week": 6,
+        "datetime": "Oct. 13 4:25 p.m. ET",
+        "team1": "Atlanta Falcons",
+        "team2": "Carolina Panthers",
+        "network": "Fox"
+    },
+    {
+        "week": 6,
+        "datetime": "Oct. 13 4:25 p.m. ET",
+        "team1": "Detroit Lions",
+        "team2": "Dallas Cowboys",
+        "network": "Fox"
+    },
+    {
+        "week": 6,
+        "datetime": "Oct. 13 8:20 p.m. ET",
+        "team1": "Cincinnati Bengals",
+        "team2": "New York Giants",
+        "network": "NBC/Peacock"
+    },
+    {
+        "week": 6,
+        "datetime": "Oct. 14 8:15 p.m. ET",
+        "team1": "Buffalo Bills",
+        "team2": "New York Jets",
+        "network": "ESPN/ABC"
+    },
+    {
+        "week": 7,
+        "datetime": "Oct. 17 8:15 p.m. ET",
+        "team1": "Denver Broncos",
+        "team2": "New Orleans Saints",
+        "network": "Amazon"
+    },
+    {
+        "week": 7,
+        "datetime": "Oct. 20 9:30 a.m. ET",
+        "team1": "New England Patriots",
+        "team2": "Jacksonville Jaguars",
+        "network": "NFL Network"
+    },
+    {
+        "week": 7,
+        "datetime": "Oct. 20 1 p.m. ET",
+        "team1": "Seattle Seahawks",
+        "team2": "Atlanta Falcons",
+        "network": "Fox"
+    },
+    {
+        "week": 7,
+        "datetime": "Oct. 20 1 p.m. ET",
+        "team1": "Tennessee Titans",
+        "team2": "Buffalo Bills",
+        "network": "CBS"
+    },
+    {
+        "week": 7,
+        "datetime": "Oct. 20 1 p.m. ET",
+        "team1": "Cincinnati Bengals",
+        "team2": "Cleveland Browns",
+        "network": "CBS"
+    },
+    {
+        "week": 7,
+        "datetime": "Oct. 20 1 p.m. ET",
+        "team1": "Houston Texans",
+        "team2": "Green Bay Packers",
+        "network": "CBS"
+    },
+    {
+        "week": 7,
+        "datetime": "Oct. 20 1 p.m. ET",
+        "team1": "Miami Dolphins",
+        "team2": "Indianapolis Colts",
+        "network": "Fox"
+    },
+    {
+        "week": 7,
+        "datetime": "Oct. 20 1 p.m. ET",
+        "team1": "Detroit Lions",
+        "team2": "Minnesota Vikings",
+        "network": "Fox"
+    },
+    {
+        "week": 7,
+        "datetime": "Oct. 20 1 p.m. ET",
+        "team1": "Philadelphia Eagles",
+        "team2": "New York Giants",
+        "network": "Fox"
+    },
+    {
+        "week": 7,
+        "datetime": "Oct. 20 4:05 p.m. ET",
+        "team1": "Las Vegas Raiders",
+        "team2": "Los Angeles Rams",
+        "network": "CBS"
+    },
+    {
+        "week": 7,
+        "datetime": "Oct. 20 4:05 p.m. ET",
+        "team1": "Carolina Panthers",
+        "team2": "Washington Commanders",
+        "network": "CBS"
+    },
+    {
+        "week": 7,
+        "datetime": "Oct. 20 4:25 p.m. ET",
+        "team1": "Kansas City Chiefs",
+        "team2": "San Francisco 49ers",
+        "network": "Fox"
+    },
+    {
+        "week": 7,
+        "datetime": "Oct. 20 8:20 p.m. ET",
+        "team1": "New York Jets",
+        "team2": "Pittsburgh Steelers",
+        "network": "NBC/Peacock"
+    },
+    {
+        "week": 7,
+        "datetime": "Oct. 21 8:15 p.m. ET",
+        "team1": "Baltimore Ravens",
+        "team2": "Tampa Bay Buccaneers",
+        "network": "ESPN"
+    },
+    {
+        "week": 7,
+        "datetime": "Oct. 21 9 p.m. ET",
+        "team1": "Los Angeles Chargers",
+        "team2": "Arizona Cardinals",
+        "network": "ESPN+"
+    },
+    {
+        "week": 8,
+        "datetime": "Oct. 24 8:15 p.m. ET",
+        "team1": "Minnesota Vikings",
+        "team2": "Los Angeles Rams",
+        "network": "Amazon"
+    },
+    {
+        "week": 8,
+        "datetime": "Oct. 27 1 p.m. ET",
+        "team1": "Baltimore Ravens",
+        "team2": "Cleveland Browns",
+        "network": "CBS"
+    },
+    {
+        "week": 8,
+        "datetime": "Oct. 27 1 p.m. ET",
+        "team1": "Tennessee Titans",
+        "team2": "Detroit Lions",
+        "network": "Fox"
+    },
+    {
+        "week": 8,
+        "datetime": "Oct. 27 1 p.m. ET",
+        "team1": "Indianapolis Colts",
+        "team2": "Houston Texans",
+        "network": "CBS"
+    },
+    {
+        "week": 8,
+        "datetime": "Oct. 27 1 p.m. ET",
+        "team1": "Green Bay Packers",
+        "team2": "Jacksonville Jaguars",
+        "network": "Fox"
+    },
+    {
+        "week": 8,
+        "datetime": "Oct. 27 1 p.m. ET",
+        "team1": "Arizona Cardinals",
+        "team2": "Miami Dolphins",
+        "network": "Fox"
+    },
+    {
+        "week": 8,
+        "datetime": "Oct. 27 1 p.m. ET",
+        "team1": "New York Jets",
+        "team2": "New England Patriots",
+        "network": "CBS"
+    },
+    {
+        "week": 8,
+        "datetime": "Oct. 27 1 p.m. ET",
+        "team1": "Atlanta Falcons",
+        "team2": "Tampa Bay Buccaneers",
+        "network": "Fox"
+    },
+    {
+        "week": 8,
+        "datetime": "Oct. 27 1 p.m. ET",
+        "team1": "Chicago Bears",
+        "team2": "Washington Commanders",
+        "network": "CBS"
+    },
+    {
+        "week": 8,
+        "datetime": "Oct. 27 4:05 p.m. ET",
+        "team1": "New Orleans Saints",
+        "team2": "Los Angeles Chargers",
+        "network": "Fox"
+    },
+    {
+        "week": 8,
+        "datetime": "Oct. 27 4:05 p.m. ET",
+        "team1": "Buffalo Bills",
+        "team2": "Seattle Seahawks",
+        "network": "Fox"
+    },
+    {
+        "week": 8,
+        "datetime": "Oct. 27 4;25 p.m. ET",
+        "team1": "Philadelphia Eagles",
+        "team2": "Cincinnati Bengals",
+        "network": "CBS"
+    },
+    {
+        "week": 8,
+        "datetime": "Oct. 27 4:25 p.m. ET",
+        "team1": "Carolina Panthers",
+        "team2": "Denver Broncos",
+        "network": "CBS"
+    },
+    {
+        "week": 8,
+        "datetime": "Oct. 27 4:25 p.m. ET",
+        "team1": "Kansas City Chiefs",
+        "team2": "Las Vegas Raiders",
+        "network": "CBS"
+    },
+    {
+        "week": 8,
+        "datetime": "Oct. 27 8:20 p.m. ET",
+        "team1": "Dallas Cowboys",
+        "team2": "San Francisco 49ers",
+        "network": "NBC/Peacock"
+    },
+    {
+        "week": 8,
+        "datetime": "Oct. 28 8:15 p.m. ET",
+        "team1": "New York Giants",
+        "team2": "Pittsburgh Steelers",
+        "network": "ESPN/ABC"
+    },
+    {
+        "week": 9,
+        "datetime": "Oct. 31 8:15 p.m. ET",
+        "team1": "Houston Texans",
+        "team2": "New York Jets",
+        "network": "Amazon"
+    },
+    {
+        "week": 9,
+        "datetime": "Nov. 3 1 p.m. ET",
+        "team1": "Dallas Cowboys",
+        "team2": "Atlanta Falcons",
+        "network": "Fox"
+    },
+    {
+        "week": 9,
+        "datetime": "Nov. 3 1 p.m. ET",
+        "team1": "Denver Broncos",
+        "team2": "Baltimore Ravens",
+        "network": "CBS"
+    },
+    {
+        "week": 9,
+        "datetime": "Nov. 3 1 p.m. ET",
+        "team1": "Miami Dolphins",
+        "team2": "Buffalo Bills",
+        "network": "CBS"
+    },
+    {
+        "week": 9,
+        "datetime": "Nov. 3 1 p.m. ET",
+        "team1": "New Orleans Saints",
+        "team2": "Carolina Panthers",
+        "network": "CBS"
+    },
+    {
+        "week": 9,
+        "datetime": "Nov. 3 1 p.m. ET",
+        "team1": "Las Vegas Raiders",
+        "team2": "Cincinnati Bengals",
+        "network": "Fox"
+    },
+    {
+        "week": 9,
+        "datetime": "Nov. 3 1 p.m. ET",
+        "team1": "Los Angeles Chargers",
+        "team2": "Cleveland Browns",
+        "network": "CBS"
+    },
+    {
+        "week": 9,
+        "datetime": "Nov. 3 1 p.m. ET",
+        "team1": "Indianapolis Colts",
+        "team2": "Minnesota Vikings",
+        "network": "CBS"
+    },
+    {
+        "week": 9,
+        "datetime": "Nov. 3 1 p.m. ET",
+        "team1": "Washington Commanders",
+        "team2": "New York Giants",
+        "network": "Fox"
+    },
+    {
+        "week": 9,
+        "datetime": "Nov. 3 1 p.m. ET",
+        "team1": "New England Patriots",
+        "team2": "Tennessee Titans",
+        "network": "Fox"
+    },
+    {
+        "week": 9,
+        "datetime": "Nov. 3 4:05 p.m. ET",
+        "team1": "Chicago Bears",
+        "team2": "Arizona Cardinals",
+        "network": "CBS"
+    },
+    {
+        "week": 9,
+        "datetime": "Nov. 3 4:25 p.m. ET",
+        "team1": "Detroit Lions",
+        "team2": "Green Bay Packers",
+        "network": "Fox"
+    },
+    {
+        "week": 9,
+        "datetime": "Nov. 3 4:25 p.m. ET",
+        "team1": "Los Angeles Rams",
+        "team2": "Seattle Seahawks",
+        "network": "Fox"
+    },
+    {
+        "week": 9,
+        "datetime": "Nov. 3 8:20 p.m. ET",
+        "team1": "Jacksonville Jaguars",
+        "team2": "Philadelphia Eagles",
+        "network": "NBC/Peacock"
+    },
+    {
+        "week": 9,
+        "datetime": "Nov. 4 8:15 p.m. ET",
+        "team1": "Tampa Bay Buccaneers",
+        "team2": "Kansas City Chiefs",
+        "network": "ESPN/ABC"
+    },
+    {
+        "week": 10,
+        "datetime": "Nov. 7 8:15 p.m. ET",
+        "team1": "Cincinnati Bengals",
+        "team2": "Baltimore Ravens",
+        "network": "Amazon"
+    },
+    {
+        "week": 10,
+        "datetime": "Nov. 10 9:30 a.m. ET",
+        "team1": "New York Giants",
+        "team2": "Carolina Panthers",
+        "network": "NFL Network"
+    },
+    {
+        "week": 10,
+        "datetime": "Nov. 10 1 p.m. ET",
+        "team1": "New England Patriots",
+        "team2": "Chicago Bears",
+        "network": "Fox"
+    },
+    {
+        "week": 10,
+        "datetime": "Nov. 10 1 p.m. ET",
+        "team1": "Buffalo Bills",
+        "team2": "Indianapolis Colts",
+        "network": "CBS"
+    },
+    {
+        "week": 10,
+        "datetime": "Nov. 10 1 p.m. ET",
+        "team1": "Minnesota Vikings",
+        "team2": "Jacksonville Jaguars",
+        "network": "Fox"
+    },
+    {
+        "week": 10,
+        "datetime": "Nov. 10 1 p.m. ET",
+        "team1": "Denver Broncos",
+        "team2": "Kansas City Chiefs",
+        "network": "CBS"
+    },
+    {
+        "week": 10,
+        "datetime": "Nov. 10 1 p.m. ET",
+        "team1": "Atlanta Falcons",
+        "team2": "New Orleans Saints",
+        "network": "Fox"
+    },
+    {
+        "week": 10,
+        "datetime": "Nov. 10 1 p.m. ET",
+        "team1": "San Francisco 49ers",
+        "team2": "Tampa Bay Buccaneers",
+        "network": "Fox"
+    },
+    {
+        "week": 10,
+        "datetime": "Nov. 10 1 p.m. ET",
+        "team1": "Pittsburgh Steelers",
+        "team2": "Washington Commanders",
+        "network": "CBS"
+    },
+    {
+        "week": 10,
+        "datetime": "Nov. 10 4:05 p.m. ET",
+        "team1": "Tennessee Titans",
+        "team2": "Los Angeles Chargers",
+        "network": "Fox"
+    },
+    {
+        "week": 10,
+        "datetime": "Nov. 10 4:25 p.m. ET",
+        "team1": "New York Jets",
+        "team2": "Arizona Cardinals",
+        "network": "CBS"
+    },
+    {
+        "week": 10,
+        "datetime": "Nov. 10 4:25 p.m. ET",
+        "team1": "Philadelphia Eagles",
+        "team2": "Dallas Cowboys",
+        "network": "CBS"
+    },
+    {
+        "week": 10,
+        "datetime": "Nov. 10 8:20 p.m. ET",
+        "team1": "Detroit Lions",
+        "team2": "Houston Texans",
+        "network": "NBC/Peacock"
+    },
+    {
+        "week": 10,
+        "datetime": "Nov. 11 8:15 p.m. ET",
+        "team1": "Miami Dolphins",
+        "team2": "Los Angeles Rams",
+        "network": "ESPN/ABC"
+    },
+    {
+        "week": 11,
+        "datetime": "Nov. 14 8:15 p.m. ET",
+        "team1": "Washington Commanders",
+        "team2": "Philadelphia Eagles",
+        "network": "Amazon"
+    },
+    {
+        "week": 11,
+        "datetime": "Nov. 17 1 p.m. ET",
+        "team1": "Green Bay Packers",
+        "team2": "Chicago Bears",
+        "network": "Fox"
+    },
+    {
+        "week": 11,
+        "datetime": "Nov. 17 1 p.m. ET",
+        "team1": "Jacksonville Jaguars",
+        "team2": "Detroit Lions",
+        "network": "CBS"
+    },
+    {
+        "week": 11,
+        "datetime": "Nov. 17 1 p.m. ET",
+        "team1": "Las Vegas Raiders",
+        "team2": "Miami Dolphins",
+        "network": "CBS"
+    },
+    {
+        "week": 11,
+        "datetime": "Nov. 17 1 p.m. ET",
+        "team1": "Los Angeles Rams",
+        "team2": "New England Patriots",
+        "network": "Fox"
+    },
+    {
+        "week": 11,
+        "datetime": "Nov. 17 1 p.m. ET",
+        "team1": "Cleveland Browns",
+        "team2": "New Orleans Saints",
+        "network": "Fox"
+    },
+    {
+        "week": 11,
+        "datetime": "Nov. 17 1 p.m. ET",
+        "team1": "Baltimore Ravens",
+        "team2": "Pittsburgh Steelers",
+        "network": "CBS"
+    },
+    {
+        "week": 11,
+        "datetime": "Nov. 17 1 p.m. ET",
+        "team1": "Minnesota Vikings",
+        "team2": "Tennessee Titans",
+        "network": "CBS"
+    },
+    {
+        "week": 11,
+        "datetime": "Nov. 17 4:05 p.m. ET",
+        "team1": "Atlanta Falcons",
+        "team2": "Denver Broncos",
+        "network": "Fox"
+    },
+    {
+        "week": 11,
+        "datetime": "Nov. 17 4:05 p.m. ET",
+        "team1": "Seattle Seahawks",
+        "team2": "San Francisco 49ers",
+        "network": "Fox"
+    },
+    {
+        "week": 11,
+        "datetime": "Nov. 17 4:25 p.m. ET",
+        "team1": "Kansas City Chiefs",
+        "team2": "Buffalo Bills",
+        "network": "CBS"
+    },
+    {
+        "week": 11,
+        "datetime": "Nov. 17 4:25 p.m. ET",
+        "team1": "Cincinnati Bengals",
+        "team2": "Los Angeles Chargers",
+        "network": "CBS"
+    },
+    {
+        "week": 11,
+        "datetime": "Nov. 17 8:20 p.m. ET",
+        "team1": "Indianapolis Colts",
+        "team2": "New York Jets",
+        "network": "NBC/Peacock"
+    },
+    {
+        "week": 11,
+        "datetime": "Nov. 18 8:15 p.m. ET",
+        "team1": "Houston Texans",
+        "team2": "Dallas Cowboys",
+        "network": "ESPN/ABC"
+    },
+    {
+        "week": 12,
+        "datetime": "Nov. 21 8:15 p.m. ET",
+        "team1": "Pittsburgh Steelers",
+        "team2": "Cleveland Browns",
+        "network": "Amazon"
+    },
+    {
+        "week": 12,
+        "datetime": "Nov. 24 1 p.m. ET",
+        "team1": "Kansas City Chiefs",
+        "team2": "Carolina Panthers",
+        "network": "CBS"
+    },
+    {
+        "week": 12,
+        "datetime": "Nov. 24 1 p.m. ET",
+        "team1": "Minnesota Vikings",
+        "team2": "Chicago Bears",
+        "network": "Fox"
+    },
+    {
+        "week": 12,
+        "datetime": "Nov. 24 1 p.m. ET",
+        "team1": "Tennessee Titans",
+        "team2": "Houston Texans",
+        "network": "CBS"
+    },
+    {
+        "week": 12,
+        "datetime": "Nov. 24 1 p.m. ET",
+        "team1": "Detroit Lions",
+        "team2": "Indianapolis Colts",
+        "network": "Fox"
+    },
+    {
+        "week": 12,
+        "datetime": "Nov. 24 1 p.m. ET",
+        "team1": "New England Patriots",
+        "team2": "Miami Dolphins",
+        "network": "CBS"
+    },
+    {
+        "week": 12,
+        "datetime": "Nov. 24 1 p.m. ET",
+        "team1": "Tampa Bay Buccaneers",
+        "team2": "New York Giants",
+        "network": "CBS"
+    },
+    {
+        "week": 12,
+        "datetime": "Nov. 24 1 p.m. ET",
+        "team1": "Dallas Cowboys",
+        "team2": "Washington Commanders",
+        "network": "Fox"
+    },
+    {
+        "week": 12,
+        "datetime": "Nov. 24 4:05 p.m. ET",
+        "team1": "Denver Broncos",
+        "team2": "Las Vegas Raiders",
+        "network": "CBS"
+    },
+    {
+        "week": 12,
+        "datetime": "Nov. 24 4:25 p.m. ET",
+        "team1": "San Francisco 49ers",
+        "team2": "Green Bay Packers",
+        "network": "Fox"
+    },
+    {
+        "week": 12,
+        "datetime": "Nov. 24 4:25 p.m. ET",
+        "team1": "Arizona Cardinals",
+        "team2": "Seattle Seahawks",
+        "network": "Fox"
+    },
+    {
+        "week": 12,
+        "datetime": "Nov. 24 8:20 p.m. ET",
+        "team1": "Philadelphia Eagles",
+        "team2": "Los Angeles Rams",
+        "network": "NBC/Peacock"
+    },
+    {
+        "week": 12,
+        "datetime": "Nov. 25 8:15 p.m. ET",
+        "team1": "Baltimore Ravens",
+        "team2": "Los Angeles Chargers",
+        "network": "ESPN/ABC"
+    },
+    {
+        "week": 13,
+        "datetime": "Nov. 28 12:30 p.m. ET",
+        "team1": "Chicago Bears",
+        "team2": "Detroit Lions",
+        "network": "CBS"
+    },
+    {
+        "week": 13,
+        "datetime": "Nov. 28 4:30 p.m. ET",
+        "team1": "New York Giants",
+        "team2": "Dallas Cowboys",
+        "network": "FOX"
+    },
+    {
+        "week": 13,
+        "datetime": "Nov. 28 8:20 p.m. ET",
+        "team1": "Miami Dolphins",
+        "team2": "Green Bay Packers",
+        "network": "NBC/Peacock"
+    },
+    {
+        "week": 13,
+        "datetime": "Nov. 29 3 p.m ET",
+        "team1": "Las Vegas Raiders",
+        "team2": "Kansas City Chiefs",
+        "network": "Amazon"
+    },
+    {
+        "week": 13,
+        "datetime": "Dec. 1 1 p.m. ET",
+        "team1": "Los Angeles Chargers",
+        "team2": "Atlanta Falcons",
+        "network": "CBS"
+    },
+    {
+        "week": 13,
+        "datetime": "Dec. 1 1 p.m. ET",
+        "team1": "Pittsburgh Steelers",
+        "team2": "Cincinnati Bengals",
+        "network": "CBS"
+    },
+    {
+        "week": 13,
+        "datetime": "Dec. 1 1 p.m. ET",
+        "team1": "Houston Texans",
+        "team2": "Jacksonville Jaguars",
+        "network": "CBS"
+    },
+    {
+        "week": 13,
+        "datetime": "Dec. 1 1 p.m. ET",
+        "team1": "Arizona Cardinals",
+        "team2": "Minnesota Vikings",
+        "network": "Fox"
+    },
+    {
+        "week": 13,
+        "datetime": "Dec. 1 1 p.m. ET",
+        "team1": "Indianapolis Colts",
+        "team2": "New England Patriots",
+        "network": "CBS"
+    },
+    {
+        "week": 13,
+        "datetime": "Dec. 1 1 p.m. ET",
+        "team1": "Seattle Seahawks",
+        "team2": "New York Jets",
+        "network": "Fox"
+    },
+    {
+        "week": 13,
+        "datetime": "Dec. 1 1 p.m. ET",
+        "team1": "Tennessee Titans",
+        "team2": "Washington Commanders",
+        "network": "Fox"
+    },
+    {
+        "week": 13,
+        "datetime": "Dec. 1 4:05 p.m. ET",
+        "team1": "Tampa Bay Buccaneers",
+        "team2": "Carolina Panthers",
+        "network": "Fox"
+    },
+    {
+        "week": 13,
+        "datetime": "Dec. 1 4:05 p.m. ET",
+        "team1": "Los Angeles Rams",
+        "team2": "New Orleans Saints",
+        "network": "Fox"
+    },
+    {
+        "week": 13,
+        "datetime": "Dec. 1 4:25 p.m. ET",
+        "team1": "Philadelphia Eagles",
+        "team2": "Baltimore Ravens",
+        "network": "CBS"
+    },
+    {
+        "week": 13,
+        "datetime": "Dec. 1 8:20 p.m. ET",
+        "team1": "San Francisco 49ers",
+        "team2": "Buffalo Bills",
+        "network": "NBC/Peacock"
+    },
+    {
+        "week": 13,
+        "datetime": "Dec. 2 8:15 p.m. ET",
+        "team1": "Cleveland Browns",
+        "team2": "Denver Broncos",
+        "network": "ESPN/ABC"
+    },
+    {
+        "week": 14,
+        "datetime": "Dec. 5 8:15 p.m. ET",
+        "team1": "Green Bay Packers",
+        "team2": "Detroit Lions",
+        "network": "Amazon"
+    },
+    {
+        "week": 14,
+        "datetime": "Dec. 8 1 p.m. ET",
+        "team1": "New York Jets",
+        "team2": "Miami Dolphins",
+        "network": "CBS"
+    },
+    {
+        "week": 14,
+        "datetime": "Dec. 8 1 p.m. ET",
+        "team1": "Atlanta Falcons",
+        "team2": "Minnesota Vikings",
+        "network": "Fox"
+    },
+    {
+        "week": 14,
+        "datetime": "Dec. 8 1 p.m. ET",
+        "team1": "New Orleans Saints",
+        "team2": "New York Giants",
+        "network": "Fox"
+    },
+    {
+        "week": 14,
+        "datetime": "Dec. 8 1 p.m. ET",
+        "team1": "Carolina Panthers",
+        "team2": "Philadelphia Eagles",
+        "network": "Fox"
+    },
+    {
+        "week": 14,
+        "datetime": "Dec. 8 1 p.m. ET",
+        "team1": "Cleveland Browns",
+        "team2": "Pittsburgh Steelers",
+        "network": "CBS"
+    },
+    {
+        "week": 14,
+        "datetime": "Dec. 8 1 p.m. ET",
+        "team1": "Las Vegas Raiders",
+        "team2": "Tampa Bay Buccaneers",
+        "network": "CBS"
+    },
+    {
+        "week": 14,
+        "datetime": "Dec. 8 1 p.m. ET",
+        "team1": "Jacksonville Jaguars",
+        "team2": "Tennessee Titans",
+        "network": "CBS"
+    },
+    {
+        "week": 14,
+        "datetime": "Dec. 8 4:05 p.m. ET",
+        "team1": "Seattle Seahawks",
+        "team2": "Arizona Cardinals",
+        "network": "CBS"
+    },
+    {
+        "week": 14,
+        "datetime": "Dec. 8 4:25 p.m. ET",
+        "team1": "Buffalo Bills",
+        "team2": "Los Angeles Rams",
+        "network": "Fox"
+    },
+    {
+        "week": 14,
+        "datetime": "Dec. 8 4:25 p.m. ET",
+        "team1": "Chicago Bears",
+        "team2": "San Francisco 49ers",
+        "network": "Fox"
+    },
+    {
+        "week": 14,
+        "datetime": "Dec. 8 8:15 p.m. ET",
+        "team1": "Los Angeles Chargers",
+        "team2": "Kansas City Chiefs",
+        "network": "NBC/Peacock"
+    },
+    {
+        "week": 14,
+        "datetime": "Dec. 9 8:15 p.m. ET",
+        "team1": "Cincinnati Bengals",
+        "team2": "Dallas Cowboys",
+        "network": "ESPN/ABC"
+    },
+    {
+        "week": 15,
+        "datetime": "Dec. 12 8:15 p.m. ET",
+        "team1": "Los Angeles Rams",
+        "team2": "San Francisco 49ers",
+        "network": "Amazon"
+    },
+    {
+        "week": 15,
+        "datetime": "Dec. 15 1 p.m. ET",
+        "team1": "Dallas Cowboys",
+        "team2": "Carolina Panthers",
+        "network": "Fox"
+    },
+    {
+        "week": 15,
+        "datetime": "Dec. 15 1 p.m. ET",
+        "team1": "Kansas City Chiefs",
+        "team2": "Cleveland Browns",
+        "network": "CBS"
+    },
+    {
+        "week": 15,
+        "datetime": "Dec. 15 1 p.m. ET",
+        "team1": "Miami Dolphins",
+        "team2": "Houston Texans",
+        "network": "CBS"
+    },
+    {
+        "week": 15,
+        "datetime": "Dec. 15 1 p.m. ET",
+        "team1": "New York Jets",
+        "team2": "Jacksonville Jaguars",
+        "network": "Fox"
+    },
+    {
+        "week": 15,
+        "datetime": "Dec. 15 1 p.m. ET",
+        "team1": "Washington Commanders",
+        "team2": "New Orleans Saints",
+        "network": "Fox"
+    },
+    {
+        "week": 15,
+        "datetime": "Dec. 15 1 p.m. ET",
+        "team1": "Baltimore Ravens",
+        "team2": "New York Giants",
+        "network": "CBS"
+    },
+    {
+        "week": 15,
+        "datetime": "Dec. 15 1 p.m. ET",
+        "team1": "Cincinnati Bengals",
+        "team2": "Tennessee Titans",
+        "network": "Fox"
+    },
+    {
+        "week": 15,
+        "datetime": "Dec. 15 4:25 p.m. ET",
+        "team1": "New England Patriots",
+        "team2": "Arizona Cardinals",
+        "network": "CBS"
+    },
+    {
+        "week": 15,
+        "datetime": "Dec. 15 4:25 p.m. ET",
+        "team1": "Indianapolis Colts",
+        "team2": "Denver Broncos",
+        "network": "CBS"
+    },
+    {
+        "week": 15,
+        "datetime": "Dec. 15 4:25 p.m. ET",
+        "team1": "Buffalo Bills",
+        "team2": "Detroit Lions",
+        "network": "Fox"
+    },
+    {
+        "week": 15,
+        "datetime": "Dec. 15 4:25 p.m. ET",
+        "team1": "Tampa Bay Buccaneers",
+        "team2": "Los Angeles Chargers",
+        "network": "Fox"
+    },
+    {
+        "week": 15,
+        "datetime": "Dec. 15 4:25 p.m. ET",
+        "team1": "Pittsburgh Steelers",
+        "team2": "Philadelphia Eagles",
+        "network": "Fox"
+    },
+    {
+        "week": 15,
+        "datetime": "Dec. 15 8:20 p.m. ET",
+        "team1": "Green Bay Packers",
+        "team2": "Seattle Seahawks",
+        "network": "NBC/Peacock"
+    },
+    {
+        "week": 15,
+        "datetime": "Dec. 16 8 p.m. ET",
+        "team1": "Chicago Bears",
+        "team2": "Minnesota Vikings",
+        "network": "ABC"
+    },
+    {
+        "week": 15,
+        "datetime": "Dec. 16 8:30 p.m. ET",
+        "team1": "Atlanta Falcons",
+        "team2": "Las Vegas Raiders",
+        "network": "ESPN"
+    },
+    {
+        "week": 16,
+        "datetime": "Dec. 19 8:15 p.m. ET",
+        "team1": "Cleveland Browns",
+        "team2": "Cincinnati Bengals",
+        "network": "Amazon"
+    },
+    {
+        "week": 16,
+        "datetime": "Dec. 21 1:00 p.m. ET",
+        "team1": "Houston Texans",
+        "team2": "Kansas City Chiefs",
+        "network": "NBC"
+    },
+    {
+        "week": 16,
+        "datetime": "Dec. 21 4:30 p.m. ET",
+        "team1": "Pittsburgh Steelers",
+        "team2": "Baltimore Ravens",
+        "network": "Fox"
+    },
+    {
+        "week": 16,
+        "datetime": "Dec. 22 1:00 p.m. ET",
+        "team1": "New York Giants",
+        "team2": "Atlanta Falcons",
+        "network": "Fox"
+    },
+    {
+        "week": 16,
+        "datetime": "Dec. 22 1:00 p.m. ET",
+        "team1": "New England Patriots",
+        "team2": "Buffalo Bills",
+        "network": "CBS"
+    },
+    {
+        "week": 16,
+        "datetime": "Dec. 22 1:00 p.m. ET",
+        "team1": "Arizona Cardinals",
+        "team2": "Carolina Panthers",
+        "network": "Fox"
+    },
+    {
+        "week": 16,
+        "datetime": "Dec. 22 1:00 p.m. ET",
+        "team1": "Detroit Lions",
+        "team2": "Chicago Bears",
+        "network": "Fox"
+    },
+    {
+        "week": 16,
+        "datetime": "Dec. 22 1:00 p.m. ET",
+        "team1": "Tennessee Titans",
+        "team2": "Indianapolis Colts",
+        "network": "CBS"
+    },
+    {
+        "week": 16,
+        "datetime": "Dec. 22 1:00 p.m. ET",
+        "team1": "Los Angeles Rams",
+        "team2": "New York Jets",
+        "network": "CBS"
+    },
+    {
+        "week": 16,
+        "datetime": "Dec. 22 1:00 p.m. ET",
+        "team1": "Philadelphia Eagles",
+        "team2": "Washington Commanders",
+        "network": "Fox"
+    },
+    {
+        "week": 16,
+        "datetime": "Dec. 22 4:05 p.m. ET",
+        "team1": "Denver Broncos",
+        "team2": "Los Angeles Chargers",
+        "network": "Fox"
+    },
+    {
+        "week": 16,
+        "datetime": "Dec. 22 4:05 p.m. ET",
+        "team1": "Minnesota Vikings",
+        "team2": "Seattle Seahawks",
+        "network": "Fox"
+    },
+    {
+        "week": 16,
+        "datetime": "Dec. 22 4:25 p.m. ET",
+        "team1": "Jacksonville Jaguars",
+        "team2": "Las Vegas Raiders",
+        "network": "CBS"
+    },
+    {
+        "week": 16,
+        "datetime": "Dec. 22 4:25 p.m. ET",
+        "team1": "San Francisco 49ers",
+        "team2": "Miami Dolphins",
+        "network": "CBS"
+    },
+    {
+        "week": 16,
+        "datetime": "Dec. 22 8:20 p.m. ET",
+        "team1": "Tampa Bay Buccaneers",
+        "team2": "Dallas Cowboys",
+        "network": "NBC/Peacock"
+    },
+    {
+        "week": 16,
+        "datetime": "Dec. 23 8:15 p.m. ET",
+        "team1": "New Orleans Saints",
+        "team2": "Green Bay Packers",
+        "network": "ESPN/ABC"
+    },
+    {
+        "week": 17,
+        "datetime": "Dec. 25 1 p.m. ET",
+        "team1": "Kansas City Chiefs",
+        "team2": "Pittsburgh Steelers",
+        "network": "Netflix"
+    },
+    {
+        "week": 17,
+        "datetime": "Dec. 25 4:30 p.m. ET",
+        "team1": "Baltimore Ravens",
+        "team2": "Houston Texans",
+        "network": "Netflix"
+    },
+    {
+        "week": 17,
+        "datetime": "Dec. 26 8:15 p.m. ET",
+        "team1": "Seattle Seahawks",
+        "team2": "Chicago Bears",
+        "network": "Amazon"
+    },
+    {
+        "week": 17,
+        "datetime": "Dec. 29 1:00 p.m. ET",
+        "team1": "New York Jets",
+        "team2": "Buffalo Bills",
+        "network": "CBS"
+    },
+    {
+        "week": 17,
+        "datetime": "Dec. 29 1:00 p.m. ET",
+        "team1": "Tennessee Titans",
+        "team2": "Jacksonville Jaguars",
+        "network": "CBS"
+    },
+    {
+        "week": 17,
+        "datetime": "Dec. 29 1:00 p.m. ET",
+        "team1": "Green Bay Packers",
+        "team2": "Minnesota Vikings",
+        "network": "Fox"
+    },
+    {
+        "week": 17,
+        "datetime": "Dec. 29 1:00 p.m. ET",
+        "team1": "Las Vegas Raiders",
+        "team2": "New Orleans Saints",
+        "network": "Fox"
+    },
+    {
+        "week": 17,
+        "datetime": "Dec. 29 1:00 p.m. ET",
+        "team1": "Carolina Panthers",
+        "team2": "Tampa Bay Buccaneers",
+        "network": "CBS"
+    },
+    {
+        "week": 17,
+        "datetime": "Dec. 29 4:25 p.m. ET",
+        "team1": "Dallas Cowboys",
+        "team2": "Philadelphia Eagles",
+        "network": "Fox"
+    },
+    {
+        "week": 17,
+        "datetime": "Dec. 29 8:20 p.m. ET",
+        "team1": "Miami Dolphins",
+        "team2": "Cleveland Browns",
+        "network": "NBC/Peacock"
+    },
+    {
+        "week": 17,
+        "datetime": "Dec. 30 8:15 p.m. ET",
+        "team1": "Detroit Lions",
+        "team2": "San Francisco 49ers",
+        "network": "ESPN/ABC"
+    },
+    {
+        "week": 17,
+        "datetime": "Jan. 5 1:00 p.m.",
+        "team1": "Denver Broncos",
+        "team2": "Cincinnati Bengals"
+    },
+    {
+        "week": 17,
+        "datetime": "Jan. 5 1:00 p.m.",
+        "team1": "Arizona Cardinals",
+        "team2": "Los Angeles Rams"
+    },
+    {
+        "week": 17,
+        "datetime": "Jan. 5 1:00 p.m.",
+        "team1": "Los Angeles Chargers",
+        "team2": "New England Patriots"
+    },
+    {
+        "week": 17,
+        "datetime": "Jan. 5 1:00 p.m.",
+        "team1": "Indianapolis Colts",
+        "team2": "New York Giants"
+    },
+    {
+        "week": 17,
+        "datetime": "Jan. 5 1:00 p.m.",
+        "team1": "Atlanta Falcons",
+        "team2": "Washington Commanders"
+    },
+    {
+        "week": 18,
+        "datetime": "Jan. 5 1:00 p.m.",
+        "team1": "San Francisco 49ers",
+        "team2": "Arizona Cardinals"
+    },
+    {
+        "week": 18,
+        "datetime": "Jan. 5 1:00 p.m.",
+        "team1": "Carolina Panthers",
+        "team2": "Atlanta Falcons"
+    },
+    {
+        "week": 18,
+        "datetime": "Jan. 5 1:00 p.m.",
+        "team1": "Cleveland Browns",
+        "team2": "Baltimore Ravens"
+    },
+    {
+        "week": 18,
+        "datetime": "Jan. 5 1:00 p.m.",
+        "team1": "Washington Commanders",
+        "team2": "Dallas Cowboys"
+    },
+    {
+        "week": 18,
+        "datetime": "Jan. 5 1:00 p.m.",
+        "team1": "Kansas City Chiefs",
+        "team2": "Denver Broncos"
+    },
+    {
+        "week": 18,
+        "datetime": "Jan. 5 1:00 p.m.",
+        "team1": "Minnesota Vikings",
+        "team2": "Detroit Lions"
+    },
+    {
+        "week": 18,
+        "datetime": "Jan. 5 1:00 p.m.",
+        "team1": "Chicago Bears",
+        "team2": "Green Bay Packers"
+    },
+    {
+        "week": 18,
+        "datetime": "Jan. 5 1:00 p.m.",
+        "team1": "Jacksonville Jaguars",
+        "team2": "Indianapolis Colts"
+    },
+    {
+        "week": 18,
+        "datetime": "Jan. 5 1:00 p.m.",
+        "team1": "Seattle Seahawks",
+        "team2": "Los Angeles Rams"
+    },
+    {
+        "week": 18,
+        "datetime": "Jan. 5 1:00 p.m.",
+        "team1": "Los Angeles Chargers",
+        "team2": "Las Vegas Raiders"
+    },
+    {
+        "week": 18,
+        "datetime": "Jan. 5 1:00 p.m.",
+        "team1": "Buffalo Bills",
+        "team2": "New England Patriots"
+    },
+    {
+        "week": 18,
+        "datetime": "Jan. 5 1:00 p.m.",
+        "team1": "Miami Dolphins",
+        "team2": "New York Jets"
+    },
+    {
+        "week": 18,
+        "datetime": "Jan. 5 1:00 p.m.",
+        "team1": "New York Giants",
+        "team2": "Philadelphia Eagles"
+    },
+    {
+        "week": 18,
+        "datetime": "Jan. 5 1:00 p.m.",
+        "team1": "Cincinnati Bengals",
+        "team2": "Pittsburgh Steelers"
+    },
+    {
+        "week": 18,
+        "datetime": "Jan. 5 1:00 p.m.",
+        "team1": "New Orleans Saints",
+        "team2": "Tampa Bay Buccaneers"
+    },
+    {
+        "week": 18,
+        "datetime": "Jan. 5 1:00 p.m.",
+        "team1": "Houston Texans",
+        "team2": "Tennessee Titans"
+    }
+]
