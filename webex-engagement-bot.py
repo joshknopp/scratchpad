@@ -1,90 +1,123 @@
+import os
 import requests
 import pandas as pd
-from requests_oauthlib import OAuth2Session
-from oauthlib.oauth2 import BackendApplicationClient
-import datetime
+from dotenv import load_dotenv
+from requests.auth import HTTPBasicAuth
 
-# WebEx API OAuth2 credentials (replace with your values)
-CLIENT_ID = 'your_client_id'
-CLIENT_SECRET = 'your_client_secret'
-AUTH_URL = 'https://webexapis.com/v1/authorize'
-TOKEN_URL = 'https://webexapis.com/v1/access_token'
-REDIRECT_URI = 'http://localhost:8080/callback'  # Change if needed
+# Load environment variables from .env file
+load_dotenv()
 
-# Helper function to authenticate using OAuth2 (SSO)
-def authenticate():
-    oauth = OAuth2Session(CLIENT_ID, redirect_uri=REDIRECT_URI)
-    
-    # Get authorization URL
-    authorization_url, state = oauth.authorization_url(AUTH_URL)
-    print(f'Visit this URL to authorize the app: {authorization_url}')
-    
-    # After authorization, WebEx will redirect to the redirect URL with a code
-    redirect_response = input('Paste the full redirect URL here: ')
-    
-    # Fetch the access token
-    token = oauth.fetch_token(TOKEN_URL, client_secret=CLIENT_SECRET,
-                              authorization_response=redirect_response)
-    return token['access_token']
+CLIENT_ID = os.getenv('WEBEX_CLIENT_ID')
+CLIENT_SECRET = os.getenv('WEBEX_CLIENT_SECRET')
+REDIRECT_URI = os.getenv('WEBEX_REDIRECT_URI')
+AUTH_CODE = os.getenv('WEBEX_AUTH_CODE')  # Temporary code obtained from initial OAuth2 flow
+ACCESS_TOKEN_URL = "https://webexapis.com/v1/access_token"
+MEETINGS_URL = "https://webexapis.com/v1/meetings"
+ATTENDEES_URL = "https://webexapis.com/v1/meetingParticipants"
+SCOPE = "meeting:schedules_read meeting:participants_read"
 
-# Function to get completed meetings since a given date
-def get_completed_meetings(token, start_date):
-    url = 'https://webexapis.com/v1/meetings'
-    headers = {'Authorization': f'Bearer {token}'}
+# Authorization URL for OAuth2 (This needs to be visited manually for now)
+AUTH_URL = (
+    f"https://webexapis.com/v1/authorize?"
+    f"client_id={CLIENT_ID}&"
+    f"response_type=code&"
+    f"redirect_uri={REDIRECT_URI}&"
+    f"scope={SCOPE}&"
+    f"state=random_state_value"
+)
+
+print(f"Visit the following URL to authorize the app:\n{AUTH_URL}")
+
+# Function to get access token
+def get_access_token():
+    response = requests.post(
+        ACCESS_TOKEN_URL,
+        data={
+            'grant_type': 'authorization_code',
+            'client_id': CLIENT_ID,
+            'client_secret': CLIENT_SECRET,
+            'code': AUTH_CODE,
+            'redirect_uri': REDIRECT_URI
+        },
+    )
+
+    if response.status_code == 200:
+        return response.json().get('access_token')
+    else:
+        raise Exception(f"Failed to get access token: {response.text}")
+
+# Function to get completed meetings
+def get_completed_meetings(access_token, start_date):
+    headers = {
+        'Authorization': f'Bearer {access_token}',
+        'Content-Type': 'application/json'
+    }
+
     params = {
         'from': start_date,
-        'to': datetime.datetime.utcnow().isoformat(),
         'state': 'ended'
     }
-    
-    response = requests.get(url, headers=headers, params=params)
-    response.raise_for_status()  # Raise an error for bad responses
-    return response.json()['items']
 
-# Function to get participants for a given meeting
-def get_meeting_participants(token, meeting_id):
-    url = f'https://webexapis.com/v1/meetingParticipants'
-    headers = {'Authorization': f'Bearer {token}'}
-    params = {'meetingId': meeting_id}
-    
-    response = requests.get(url, headers=headers, params=params)
-    response.raise_for_status()
-    return response.json()['items']
+    response = requests.get(MEETINGS_URL, headers=headers, params=params)
 
-# Function to export meeting and attendee data to an Excel file
-def export_to_excel(meetings, filename='webex_meetings.xlsx'):
+    if response.status_code == 200:
+        return response.json().get('items', [])
+    else:
+        raise Exception(f"Failed to fetch meetings: {response.text}")
+
+# Function to get attendees for a given meeting ID
+def get_meeting_attendees(access_token, meeting_id):
+    headers = {
+        'Authorization': f'Bearer {access_token}',
+        'Content-Type': 'application/json'
+    }
+
+    params = {
+        'meetingId': meeting_id
+    }
+
+    response = requests.get(ATTENDEES_URL, headers=headers, params=params)
+
+    if response.status_code == 200:
+        return response.json().get('items', [])
+    else:
+        raise Exception(f"Failed to fetch attendees for meeting {meeting_id}: {response.text}")
+
+# Main function to gather data and export to Excel
+def export_meeting_attendance_to_excel():
+    # Step 1: Get access token
+    access_token = get_access_token()
+
+    # Step 2: Fetch all completed meetings since June 1, 2024
+    start_date = "2024-06-01T00:00:00Z"
+    meetings = get_completed_meetings(access_token, start_date)
+
+    # Step 3: Collect meeting and attendee data
     data = []
     for meeting in meetings:
-        for participant in meeting['participants']:
-            data.append({
-                'Meeting Date': meeting['start'],
-                'Meeting Name': meeting['title'],
-                'Attendee Name': participant['name'],
-                'Attendance Duration (minutes)': participant['duration'],
-                'Email': participant['email']
-            })
-    
-    # Create DataFrame and export to Excel
-    df = pd.DataFrame(data)
-    df.to_excel(filename, index=False)
-    print(f'Data exported to {filename}')
-
-def main():
-    # Authenticate and get access token
-    token = authenticate()
-
-    # Retrieve completed meetings since June 1, 2024
-    start_date = '2024-06-01T00:00:00Z'  # ISO 8601 format
-    meetings = get_completed_meetings(token, start_date)
-
-    # For each meeting, retrieve participant details
-    for meeting in meetings:
         meeting_id = meeting['id']
-        participants = get_meeting_participants(token, meeting_id)
-        meeting['participants'] = participants
+        meeting_name = meeting['title']
+        meeting_start = meeting['start']
+        meeting_end = meeting['end']
 
-    # Export data to Excel
-    export_to_excel(meetings)
+        # Fetch attendees for each meeting
+        attendees = get_meeting_attendees(access_token, meeting_id)
+        for attendee in attendees:
+            data.append({
+                'Meeting Name': meeting_name,
+                'Meeting Start': meeting_start,
+                'Meeting End': meeting_end,
+                'Attendee Name': attendee['displayName'],
+                'Attendee Email': attendee['email'],
+                'Attendance Duration': attendee['duration'],
+                'Attendee Status': attendee['status']  # e.g., attended, did not attend
+            })
 
-if __name__ == '__main__':
-    main()
+    # Step 4: Export the collected data to Excel
+    df = pd.DataFrame(data)
+    df.to_excel('webex_meeting_attendance.xlsx', index=False)
+    print("Export completed: webex_meeting_attendance.xlsx")
+
+# Execute the script
+if __name__ == "__main__":
+    export_meeting_attendance_to_excel()
