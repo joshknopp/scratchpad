@@ -1,0 +1,84 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure full viewport height */
+}
+
+header {
+    background-color: #f0f0f0; /* Example header color */
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: bold;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile-icon {
+    width: 30px;
+    height: 30px;
+    background-color: #ccc; /* Placeholder profile icon */
+    border-radius: 50%;
+}
+
+nav {
+    background-color: #eee; /* Example nav color */
+    padding: 0.5rem;
+    display: flex;
+}
+
+.dropdown {
+    margin-right: 10px;
+}
+
+main {
+    padding: 1rem;
+    flex: 1; /* Allow main content to take up available space */
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    margin-bottom: 1rem; /* Space between rows */
+}
+
+.gauge, .chart, .chart-3x {
+    background-color: #fff; /* Example chart/gauge background */
+    border: 1px solid #ddd; /* Example border */
+    padding: 1rem;
+    text-align: center;
+    box-sizing: border-box; /* Include padding and border in width */
+}
+
+.gauge {
+    flex: 1; /* Equal width for gauges */
+}
+
+.chart {
+    flex: 1; /* Equal width for charts */
+}
+
+.chart-3x {
+    flex: 3; /* 3x width for the larger chart */
+}
+
+/* Responsive adjustments (example) */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+    }
+
+    .gauge, .chart, .chart-3x {
+        flex: 1; /* Full width on smaller screens */
+        margin-bottom: 1rem; /* Add space between stacked items */
+    }
+}
