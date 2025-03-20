@@ -1,0 +1,76 @@
+import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Observable, throwError, of, defer, Subject, timer } from 'rxjs';
+import { switchMap, catchError, map, take, find, retryWhen, delayWhen, tap } from 'rxjs/operators';
+import { OidcSecurityService } from 'angular-auth-oidc-client';
+import { LoginResponse } from './login-response.model';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class ApiService {
+
+  private maxLoginAttempts = 3; // Limit login attempts
+  private loginAttemptDelay = 2000; // Delay between attempts (milliseconds)
+
+  constructor(private http: HttpClient, private oidcSecurityService: OidcSecurityService) { }
+
+  get<T>(path: string, params?: Object): Observable<T> {
+    return this.validateAuth().pipe(
+      switchMap(isAuthenticated => {
+        if (isAuthenticated) {
+          return this.http.get<T>(`${this.getBaseUrl()}/${path}`, params);
+        } else {
+          return throwError(() => 'Unable to authenticate');
+        }
+      }),
+      catchError(error => {
+        console.error('Authentication error:', error);
+        return throwError(() => error);
+      })
+    );
+  }
+
+  private validateAuth(): Observable<boolean> {
+    let loginAttempts = 0; // Initialize login attempt counter
+
+    return this.oidcSecurityService.checkAuth().pipe(
+      take(1),
+      switchMap((loginResponse: LoginResponse) => {
+        if (loginResponse.isAuthenticated) {
+          return of(true);
+        } else {
+          return defer(() => {
+            return this.oidcSecurityService.isAuthenticated$.pipe(
+              find(isAuthenticated => isAuthenticated),
+              take(1),
+              map(() => true),
+              retryWhen(errors => errors.pipe(
+                tap(() => {
+                  loginAttempts++;
+                  if (loginAttempts >= this.maxLoginAttempts) {
+                    throw new Error('Max login attempts reached');
+                  }
+                  this.oidcSecurityService.authorize(); // Retry login
+                }),
+                delayWhen(() => timer(this.loginAttemptDelay)) // Introduce delay
+              )),
+              catchError(error => {
+                console.error('Authentication failed:', error);
+                return of(false); // Return false on error
+              })
+            );
+          });
+        }
+      }),
+      catchError(error => {
+        console.error('Authentication check failed:', error);
+        return of(false);
+      })
+    );
+  }
+
+  private getBaseUrl(): string {
+    return 'YOUR_API_BASE_URL';
+  }
+}
