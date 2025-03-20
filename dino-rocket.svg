@@ -1,4 +1,5 @@
-<svg width="200" height="200" viewBox="0 0 200 200"> <style> .rocket { animation: fly 2s infinite; }
-@keyframes fly { 0% { transform: translateY(0); } 50% { transform: translateY(-10px); } 100% { transform: translateY(0); } } </style>
-<g class="rocket"> <rect x="120" y="100" width="20" height="40" fill="red" /> <rect x="110" y="140" width="40" height="20" fill="gray" /> <circle cx="130" y="150" r="10" fill="white" /> <polygon points="140,160 150,170 160,160" fill="orange" /> </g>
-<g transform="translate(50, 50)"> <path d="M 50,100 C 50,80 100,80 100,100 C 100,120 50,120 50,100" fill="green" /> <circle cx="75" cy="100" r="10" fill="black" /> <polygon points="80,80 90,70 100,80" fill="black" /> </g> </svg>
+<svg width="200" height="200" viewBox="0 0 200 200"> <style> .flame { animation: flame 1s infinite; }
+@keyframes flame { 0% { fill: orange; } 50% { fill: yellow; } 100% { fill: orange; } } </style>
+<rect x="0" y="0" width="200" height="200" fill="#000080" />
+<g transform="translate(50, 50)"> <rect x="0" y="0" width="20" height="40" fill="green" /> <rect x="10" y="10" width="10" height="10" fill="white" /> <rect x="20" y="10" width="10" height="10" fill="black" /> <rect x="0" y="40" width="30" height="10" fill="green" /> </g>
+<g transform="translate(100, 100)"> <rect x="0" y="0" width="20" height="40" fill="white" /> <rect x="10" y="10" width="10" height="10" fill="blue" /> <rect x="20" y="10" width="10" height="10" fill="blue" /> <rect x="0" y="40" width="30" height="10" fill="red" /> <rect x="0" y="50" width="10" height="10" fill="yellow" /> <rect x="10" y="50" width="10" height="10" fill="orange" /> <rect x="20" y="50" width="10" height="10" fill="red" /> </g> </svg>
