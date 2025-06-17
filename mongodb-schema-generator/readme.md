@@ -71,15 +71,23 @@ node generateCleanSchema.js <collection_name>
 ```
 
 Example:
-To generate a schema for a collection named products in the database specified in your .env file:
-node generateCleanSchema.js products
 
-Output
-Upon successful execution, a new file will be created in the same directory, named after your collection, followed by .schema.json.
+To generate a schema for a collection named products in the database specified in your .env file:
+
+`node generateCleanSchema.js products`
+
+## Output
+
+Upon successful execution, a new file will be created in the same directory, named after your collection, followed by `.schema.json.`
+
 Example Output File Name: products.schema.json
+
 This JSON file will contain the inferred schema, cleaned of statistical data, ready for use with MongoDB's $jsonSchema validator.
-Example Generated Schema (Snippet)
+
+## Example Generated Schema (Snippet)
+
 The generated [collection_name].schema.json file will look something like this (structure and content will vary based on your data):
+
 ```{
   "bsonType": "object",
   "properties": {
@@ -120,12 +128,15 @@ The generated [collection_name].schema.json file will look something like this (
 }
 ```
 
-Applying the Schema for MongoDB Validation
+## Applying the Schema for MongoDB Validation
+
 Once you have your [collection_name].schema.json file, you can apply it to your MongoDB collection using collMod (for existing collections) or createCollection (for new ones).
-Important: If your schema includes "additionalProperties": false at the top level, you must explicitly include _id in your properties and required arrays, even though MongoDB automatically handles it.
-Example: Applying to an Existing Collection in Mongo Shell
-// Open your generated .schema.json file and copy its content.
-// Paste it inside the $jsonSchema object below.
+
+Important: If your schema includes `"additionalProperties": false` at the top level, you must explicitly include _id in your properties and required arrays, even though MongoDB automatically handles it.
+
+## Example: Applying to an Existing Collection in Mongo Shell
+
+Open your generated .schema.json file and copy its content. Paste it inside the $jsonSchema object below.
 
 ```
 db.runCommand({
@@ -149,12 +160,19 @@ db.runCommand({
 ```
 
 Remember to replace "yourCollectionName" and paste the actual content of your generated schema file.
-Customization
+
+## Customization
+
  * Sampling Size: You can adjust the size option in the parseSchema function within generateCleanSchema.js to control how many documents are sampled for schema inference. A larger sample provides more accurate inference but takes longer.
+
+```
    const schema = await parseSchema(documentStream, {
     size: 5000 // Sample 5000 documents
 });
+```
 
  * Excluded Keys: If you find other statistical keys you want to remove, you can add them to the keysToRemove array in the cleanCompassSchema function.
-License
+
+## License
+
 This project is open-source and available under the MIT License (or choose your preferred license).
